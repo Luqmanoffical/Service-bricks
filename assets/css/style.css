@@ -1195,3 +1195,91 @@ h1 {
     margin-top: 1rem;
     color: #28a745; /* Bootstrap success color */
 }
+
+
+/* dashboard */
+
+.dashboard-hero {
+    color: #fff;
+    min-height: 100vh;
+    margin-top: 120px; /* Adjust according to navbar height */
+}
+.dashboard-section {
+    padding: 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    margin-bottom: 1rem;
+}
+.dashboard-project-card {
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: .375rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-btn-sunset {
+    border: 2px solid transparent;
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+        linear-gradient(to right, #ff7e5f, #feb47b) border-box;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gradient-btn-sunset:hover {
+    background: linear-gradient(#fefeff, #ffff) padding-box,
+        linear-gradient(to right, #ff7e5f, #feb47b) border-box;
+    color: #c77d00;
+}
+.gradient-btn-forest {
+    border: 2px solid transparent;
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+        linear-gradient(to right, #4caf50, #66bb6a, #388e3c) border-box;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gradient-btn-forest:hover {
+    background: linear-gradient(#fefeff, #ffff) padding-box,
+        linear-gradient(to right, #4caf50, #66bb6a, #388e3c) border-box;
+    color: #005005;
+}
+
+.gradient-btn-crimson {
+    border: 2px solid transparent;
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+        linear-gradient(to right, #ff4d4d, #ff9999) border-box;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gradient-btn-crimson:hover {
+    background: linear-gradient(#fefeff, #ffff) padding-box,
+        linear-gradient(to right, #ff4d4d, #ff9999) border-box;
+    color: #780000;
+}
+.gradient-btn-cherry {
+    border: 2px solid transparent;
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+        linear-gradient(to right, #ff7f50, #ffb6c1) border-box;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gradient-btn-cherry:hover {
+    background: linear-gradient(#fefeff, #ffff) padding-box,
+        linear-gradient(to right, #ff7f50, #ffb6c1) border-box;
+    color: #5c0000;
+}
+

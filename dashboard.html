@@ -58,7 +58,55 @@
           </nav>
         
         
-        
+           <div class="dashboard-hero container">
+        <h1 class="text-2xl font-bold mb-4">User Dashboard</h1>
+        <div class="dashboard-section">
+            <p>Email: user@example.com</p>
+            <p>Subscription Status: free</p>
+            <button class="btn btn-primary" onclick="handleUpgrade()">Upgrade Account</button>
+            <button class="btn btn-secondary ms-2">Change Password</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="text-lg font-semibold">Announcements</h2>
+            <p>Stay tuned for upcoming features!</p>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="text-lg font-semibold">Help</h2>
+            <p>If you need assistance, please contact support@example.com</p>
+        </div>
+
+        <div class="my-4">
+            <button class="btn btn-success" onclick="handleCreateProject()">Create New Project</button>
+            <button class="btn btn-warning ms-2" onclick="handleCreateMicroservice()">Create Microservice</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2 class="text-xl font-semibold mb-4">Your Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dashboard-project-card">
+                        <h3 class="text-lg font-bold">Project One</h3>
+                        <p>Description for Project One</p>
+                        <p class="text-muted">Create Date: 2023-01-01</p>
+                        <button class="btn btn-primary" onclick="handleEditProject(1)">Edit</button>
+                        <button class="btn btn-danger" onclick="handleDeleteProject(1)">Delete</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dashboard-project-card">
+                        <h3 class="text-lg font-bold">Project Two</h3>
+                        <p>Description for Project Two</p>
+                        <p class="text-muted">Create Date: 2023-01-02</p>
+                        <button class="btn btn-primary" onclick="handleEditProject(2)">Edit</button>
+                        <button class="btn btn-danger" onclick="handleDeleteProject(2)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
         
         
            <!-- Footer -->
