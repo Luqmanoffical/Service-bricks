@@ -15,9 +15,7 @@ body {
 .navbar-dark {
     background-color: #0e0c15;
 }
-.nav-logo{
-width: 280px ;
-}
+
 .navbar-dark .home-link,
 .features-link,
 .getstarted-link,
@@ -665,6 +663,7 @@ footer {
 
 .blog-section {
     margin-top: 7rem;
+    color: white;
 }
 
 h1 {
