@@ -57,7 +57,14 @@
                   </div>
               </nav>
             
-            
+              <div class="container edit-container">
+                <h1 class="text-2xl font-bold mb-4">Edit Microservice</h1>
+                <button id="addClassButton" class="mb-4 edit-button btn">Add New Class</button>
+                
+                <div id="classGrid" class="row">
+                    <!-- Dynamic Class Cards will be appended here -->
+                </div>
+            </div>
             
             
             
@@ -171,7 +178,64 @@
             
             
             
-            
+            <script>
+                const classes = [
+                    { id: 1, name: "User", properties: [{ name: "username", type: "String" }, { name: "age", type: "Number" }] },
+                    { id: 2, name: "Order", properties: [{ name: "orderId", type: "String" }, { name: "total", type: "Number" }] }
+                ];
+        
+                const classGrid = document.getElementById('classGrid');
+        
+                const renderClasses = () => {
+                    classGrid.innerHTML = ''; // Clear existing classes
+                    classes.forEach((cls, index) => {
+                        const classCard = document.createElement('div');
+                        classCard.className = "col-md-4 edit-class";
+                        classCard.innerHTML = `
+                            <h3>
+                                <input type="text" value="${cls.name}" oninput="updateClassName(${index}, this.value)" placeholder="Class Name" class="form-control mb-2" />
+                            </h3>
+                            <div>
+                                <h4 class="font-semibold">Properties</h4>
+                                <ul class="mb-4">
+                                    ${cls.properties.map(prop => `<li>${prop.name} (${prop.type})</li>`).join('')}
+                                </ul>
+                                <form onsubmit="addProperty(event, ${index})" class="d-flex mb-4">
+                                    <input type="text" placeholder="Property Name" class="form-control me-2" required />
+                                    <select class="form-select me-2">
+                                        <option value="String">String</option>
+                                        <option value="Number">Number</option>
+                                        <option value="Boolean">Boolean</option>
+                                    </select>
+                                    <button type="submit" class="btn edit-button">Add</button>
+                                </form>
+                            </div>
+                        `;
+                        classGrid.appendChild(classCard);
+                    });
+                };
+        
+                const updateClassName = (index, name) => {
+                    classes[index].name = name;
+                    renderClasses();
+                };
+        
+                const addProperty = (event, classIndex) => {
+                    event.preventDefault();
+                    const propertyName = event.target[0].value;
+                    const propertyType = event.target[1].value;
+                    classes[classIndex].properties.push({ name: propertyName, type: propertyType });
+                    event.target.reset();
+                    renderClasses();
+                };
+        
+                document.getElementById('addClassButton').addEventListener('click', () => {
+                    classes.push({ id: classes.length + 1, name: "", properties: [] });
+                    renderClasses();
+                });
+        
+                renderClasses(); // Initial render
+            </script>
             
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
