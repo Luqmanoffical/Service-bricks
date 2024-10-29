@@ -130,7 +130,184 @@ footer {
 
 
 
+/* Privacy Policy CSS Section Start */
+.privacy-policy-body {
+    background-color: #0e0c15;
+    font-family: Arial, sans-serif;
+    color: white;
+}
 
+
+.privacy-policy-heading-div {
+    margin-top: 7rem;
+}
+
+.privacy-policy-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-weight: bold;
+    color: white;
+}
+
+.privacy-policy-typewriter {
+    display: flex;
+    justify-content: center
+}
+
+#privacy-policy-text {
+    color: #8a2be2;
+}
+
+.privacy-policy-header {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+.privacy-policy-heading-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-heading-paragraph {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.privacy-policy-email-link {
+    color: #8a2be2;
+    text-decoration: none;
+}
+
+.privacy-policy-email-link:hover {
+    text-decoration: underline;
+}
+
+.privacy-policy-section {
+
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.privacy-policy-section:hover {
+    border-top: 2px solid #8a2be2;
+    border-bottom: 2px solid #8a2be2;
+}
+
+
+.privacy-policy-section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-section-content {
+    display: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.privacy-policy-section-content .paragraph {
+    margin-bottom: 15px;
+}
+
+.section.open .privacy-policy-section-content {
+    display: block;
+}
+
+
+.privacy-policy-custom-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.privacy-policy-custom-list li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .privacy-policy-typewriter {
+        flex-direction: column;
+    }
+
+    .privacy-policy-title {
+        font-size: 2rem;
+    }
+}
+
+/* Privacy Policy CSS Section End */
+
+/* Latest News Section CSS Start */
+.latest-news-heading-div {
+
+    margin-top: 7rem;
+}
+
+.latest-news-title {
+
+    font-size: 3.75rem;
+    line-height: 1;
+    color: #8a2be2;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+.latest-news-container {
+
+    margin: 0 1rem;
+}
+
+.latest-news-item {
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.latest-news-item:hover {
+    border-top: 2px solid #8a2be2;
+    border-bottom: 2px solid #8a2be2;
+}
+
+.latest-news-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.latest-news-text {
+    display: flex;
+    align-items: center;
+}
+
+.latest-news-icon {
+    height: 1.5rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.latest-news-date {
+    font-size: 1rem;
+    color: #bbb;
+    font-weight: bolder;
+}
+
+.latest-news-content {
+    padding: 1rem;
+    color: #ffffff;
+}
+
+/* Latest News Section CSS End */
 
 
 
@@ -720,421 +897,6 @@ h1 {
 
 
 
+/* ---------------------------------Home page start--------------------------------- */
 
-/* registration page styling start */
 
-
-.img-col-background {
-    background-color: #ffffff0e !important;
-    overflow: hidden;
-    border-radius: 20px 0 0 20px;
-}
-
-.register-main-div {
-    background-color: #68208a0e;
-    border: 2px solid #8a2be2;
-    border-radius: 20px;
-    transition: box-shadow 0.8s ease-in-out;
-    box-shadow: 0 3px 7px 7px rgba(222, 58, 237, 0.384);
-}
-
-.register-main-div:hover {
-    box-shadow: 0 8px 16px 16px rgba(124, 58, 237, 0.6);
-}
-
-.reg-email-field,
-.reg-pass-field,
-.reg-cnfrm-pass-field {
-    background-color: #ffffff0e;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-}
-
-.reg-email-field:focus,
-.reg-pass-field:focus,
-.reg-cnfrm-pass-field:focus {
-    background-color: #2b2b2b;
-    border-color: #8a2be2;
-    color: #ffffff;
-}
-
-.register-btn {
-    background-color: #8a2be2;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    width: 100%;
-}
-
-.register-btn:hover {
-    background-color: #8a2be2;
-}
-
-
-.reg-icons {
-    color: #ffffff;
-    background-color: transparent;
-    border-radius: 6px 0 0 6px;
-}
-
-.reg-micro-text {
-    font-size: 23px;
-    color: #8a2be2;
-}
-
-.reg-submit-text {
-    margin-top: 10px;
-}
-
-.reg-never-text {
-    font-size: larger;
-}
-
-.regcaption {
-    font-size: 23px;
-    color: #8a2be2;
-}
-
-.regcaption1 {
-    margin-top: 10px;
-}
-
-.regcaption2 {
-    font-size: larger;
-}
-
-.regcaption3 {
-    color: gray;
-}
-
-
-#passwordError,
-#confirmPasswordError,
-#termsError {
-    color: red;
-}
-
-
-@media (min-width: 320px) and (max-width: 420px) {
-    .reg-col-img {
-        margin: 0px !important;
-    }
-
-    .reg-micro-text,
-    .reg-servicebrick-text,
-    .reg-never-text {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .img-col-background {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .reg-card-body {
-        padding: 0.5rem !important;
-    }
-
-    .reg-content-text {
-        font-size: 1rem !important;
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    .reg-terms-check {
-        font-size: 8px;
-    }
-
-    .reg-submit-text {
-        margin-top: 2rem !important;
-        font-size: 12px;
-    }
-
-    .reg-already-login-text {
-        font-size: 12px !important;
-    }
-
-    #emailError,
-    #passwordError,
-    #confirmPasswordError,
-    #termsError {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 420px) and (max-width: 575px) {
-    .reg-col-img {
-        margin: 0px !important;
-    }
-
-    .reg-micro-text,
-    .reg-servicebrick-text,
-    .reg-never-text {
-        padding: 10px;
-    }
-
-    .img-col-background {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .reg-card-body {
-        padding: 0.5rem !important;
-    }
-
-    .reg-content-text {
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    .reg-submit-text {
-        margin-top: 2rem !important;
-    }
-}
-
-@media (min-width: 575px) and (max-width: 768px) {
-    .reg-col-img {
-        margin: 0px !important;
-    }
-
-    .reg-micro-text,
-    .reg-servicebrick-text,
-    .reg-never-text {
-        padding: 10px;
-    }
-
-    .img-col-background {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .reg-card-body {
-        padding: 0.5rem !important;
-    }
-
-    .reg-content-text {
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    .reg-terms-check {
-        font-size: 8px;
-    }
-
-    .reg-submit-text {
-        margin-top: 2rem !important;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .reg-col-img {
-        margin: 0px !important;
-    }
-
-    .reg-micro-text,
-    .reg-servicebrick-text,
-    .reg-never-text {
-        padding: 10px;
-
-    }
-
-    .reg-micro-text {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .reg-card-body {
-        padding: 2.5rem !important;
-    }
-
-    .reg-content-text {
-        text-align: center;
-        padding-top: 2rem;
-    }
-
-    .reg-submit-text {
-        margin-top: 2rem !important;
-    }
-}
-
-/* registration page styling End
-
-
-
-
-/* Login page styling start */
-
-.login-pass-field {
-    position: relative;
-    z-index: 0 !important;
-}
-
-.password-eye {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: white;
-}
-
-
-.login-main-div {
-    background-color: #68208a0e;
-    border-width: 2px;
-    border-color: #8a2be2;
-    border-radius: 15px;
-    transition: box-shadow 0.8s ease-in-out;
-    box-shadow: 0 0 7px 7px rgba(222, 58, 237, 0.384);
-}
-
-.login-main-div:hover {
-    box-shadow: 0 12px 24px rgba(124, 58, 237, 0.5);
-}
-
-.login-col-background {
-    background-color: #ffffff0e !important;
-    overflow: hidden;
-}
-
-.log-in-btn {
-    background-color: #8a2be2;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 8px;
-    width: 100%;
-}
-
-.log-in-btn:hover {
-    background-color: #7b1fa2;
-}
-
-.login-service-text {
-    color: #8a2be2;
-}
-
-.login-email,
-.login-pass-field {
-    background-color: #ffffff0e;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.login-email:focus,
-.login-pass-field:focus {
-    background-color: #2b2b2b;
-    border-color: #8a2be2;
-    color: #ffffff;
-}
-
-.error-message {
-    display: block;
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-.is-invalid {
-    border-color: red;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
-
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-.login-remeber-me {
-    text-align: center;
-}
-
-@media (min-width: 320px) and (max-width: 420px) {
-
-    .login-service-text {
-        font-size: 18px !important;
-    }
-
-    .logcaption1 {
-        font-size: small;
-        margin-top: 12px;
-    }
-
-    .login-img {
-        margin: 0px;
-    }
-
-    .login-remeber-me {
-        margin-top: 5px;
-    }
-
-    .login-col-background {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .login-card-body {
-        padding: 1.5rem !important;
-    }
-
-    .login-text {
-        text-align: center;
-    }
-
-    .error-message,
-    .login-remeber-me,
-    .login-forget-pass,
-    .login-signup-link {
-        font-size: 12px;
-    }
-}
-
-@media (min-width: 420px) and (max-width: 767px) {
-
-    .login-service-text {
-        font-size: 22px !important;
-    }
-
-    .logcaption1 {
-        font-size: 18px;
-        margin-top: 12px;
-    }
-
-    .login-img {
-        margin: 0px !important;
-    }
-
-    .login-col-background {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
-    }
-
-    .login-card-body {
-        padding: 1.5rem !important;
-    }
-
-    .login-text {
-        text-align: center;
-    }
-
-    .error-message,
-    .login-remeber-me,
-    .login-forget-pass,
-    .login-signup-link {
-        font-size: 16px;
-    }
-}
-
-
-
-/* Login & registration page styling end */
