@@ -15,9 +15,7 @@ body {
 .navbar-dark {
     background-color: #0e0c15;
 }
-.nav-logo{
-width: 280px ;
-}
+
 .navbar-dark .home-link,
 .features-link,
 .getstarted-link,
@@ -89,7 +87,21 @@ footer {
 .nav-link:hover {
     color: #8a2be2 !important;
 }
-
+.gradient-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #682459, #3e0b4d, #6b01c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text:hover{
+    background: linear-gradient(to right, #00ffaa, #007740, #00b368);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pointer{
+    cursor: pointer;
+}
 @media (min-width: 768px) and (max-width: 992px) {
 
     .img-div {
@@ -828,6 +840,7 @@ footer {
 
 .blog-section {
     margin-top: 7rem;
+    color: white;
 }
 
 h1 {
@@ -900,3 +913,82 @@ h1 {
 /* ---------------------------------Home page start--------------------------------- */
 
 
+
+
+/* 5-logos section start */
+.img-fluid-5-logos{
+    height: 50px;
+}
+
+/* home benefits-card section start */
+.benefit-card {
+    border: 1px solid transparent;
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+}
+
+.feature-benefit-icons {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.explore-more {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    color: #8a2be2;
+}
+
+.arrow-icon {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+
+.benefit-card h1{
+    color: white;
+    font-size: 25px;
+}
+
+.benefit-card p{
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+/*  */
+
+
+
+/* stright line with text start */
+.gradient-line {
+    width: 4px;
+    height: 80%; /* Adjusted height to fit within content */
+    background: linear-gradient(to bottom, #009ca0, #6c757d);
+    display: inline-block;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .content-left, .content-right {
+    padding: 20px;
+    flex: 1;
+  }
+  
+/* stright line with text start */
