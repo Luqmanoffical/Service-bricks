@@ -1256,7 +1256,7 @@ text-align: justify;
 font-size: 1.5rem;
 }
 
-.about-impressum a{
+ a{
 color: purple;
 
 }
@@ -1300,4 +1300,16 @@ color: purple;
     font-weight: lighter;
     }
           
+    }
+
+    /* About end */
+     /* consulting start */
+     .consulting{
+        padding: 24px; 
+    min-height: 100vh;
+        margin-top: 110px;
+        color: #ffff;
+    }
+    .justify{
+        text-align: justify;
     }
