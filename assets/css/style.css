@@ -38,6 +38,7 @@ body {
 
 .navbar-dark .home-link,
 .features-link,
+.documatation-link,
 .getstarted-link,
 .consulting-link,
 .about-link,
@@ -50,6 +51,7 @@ body {
 
 .navbar-dark .home-link:hover,
 .features-link:hover,
+.documatation-link:hover,
 .getstarted-link:hover,
 .consulting-link:hover,
 .about-link:hover,
