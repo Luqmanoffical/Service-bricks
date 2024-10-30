@@ -1204,17 +1204,21 @@ font-weight: lighter;
     flex-direction: column;
 }
 .about-hero-smhead{
-    font-size: 1rem;
+    font-size: 14px;
 }
 .about-owned{
     font-weight: lighter;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: rgba(196, 193, 193, 0.74);
 }
 .about h1{
     color: #FFF;
     
     font-size:3rem;
+}
+.about-hero p {
+    font-size: 15px;
+   
 }
 .about-gradient-background {
  
@@ -1233,6 +1237,67 @@ font-weight: lighter;
     font-size:3rem;
 }
 .about-opensource p{
-    font-size: larger
-    ;
+    padding: 0 120px;
+    font-size: 1.25rem;
+    text-align: center;
+font-weight: lighter;
 }
+
+.about-mit{
+    border-radius: 10px;
+    margin: 0 250px;
+}
+.about-mit p{
+    font-size: 1rem;
+text-align: justify;
+
+}
+.about-impressum h3{
+font-size: 1.5rem;
+}
+
+.about-impressum a{
+color: purple;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+       
+    .about-opensource{
+        
+        padding: 20px ;
+    }
+  
+    .about-opensource p{
+        padding: 0 40px;
+       
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .about h1{
+        font-size:2rem;
+    }
+    .about-opensource{
+        
+        padding: 0px !important;
+    }
+  
+    .about-opensource p{
+        padding: 0px !important ;
+       
+    }
+    .about-opensource h3{
+        font-size:1.5rem;
+    }
+    .about-opensource p{
+        padding: 0 120px;
+        font-size: 1.25rem;
+        text-align: center;
+    font-weight: lighter;
+    }
+          
+    }
