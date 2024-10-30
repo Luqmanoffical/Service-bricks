@@ -1320,3 +1320,12 @@ color: white;
     margin-top: 20px;
 }
 /* Project Dashboard end */
+/* complete start */
+.completemicro-container { padding: 24px; 
+
+    margin-top: 110px;
+}
+        .completemicro-status { margin-bottom: 16px; padding: 16px; border-radius: 4px; }
+        .completemicro-button { padding: 8px 16px; border-radius: 4px; }
+        .completemicro-success { background-color: #d1e7dd; color: #0f5132; }
+        .completemicro-failure { background-color: #f8d7da; color: #842029; }

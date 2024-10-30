@@ -56,8 +56,23 @@
                       </div>
                   </div>
               </nav>
-            
-            
+              <div  class="completemicro-container">
+              <div id="status" class="completemicro-status completemicro-success">
+                <h2 class="font-semibold">Success!</h2>
+                <p id="message">The microservice has been generated successfully!</p>
+            </div>
+    
+            <div class="my-4 text-white">
+                <h3 class="text-lg font-semibold">Models Created:</h3>
+                <ul class="list-disc list-inside" id="modelsList"></ul>
+            </div>
+    
+            <div class="flex space-x-4 mt-6">
+                <button id="goBackButton" class="completemicro-button btn btn-primary">Go Back to Project completemicro</button>
+                <button id="goHomeButton" class="completemicro-button btn btn-secondary">Go Back Home</button>
+            </div>
+        </div>
+    
             
             
             
@@ -170,7 +185,43 @@
             </footer>
             
             
-            
+            <script>
+                // Demo data
+                const status = {
+                    success: true,
+                    message: 'The microservice has been generated successfully!',
+                };
+        
+                const models = ['User', 'Product', 'Order'];
+        
+                // Update the status message
+                const statusDiv = document.getElementById('status');
+                const messageDiv = document.getElementById('message');
+                if (!status.success) {
+                    statusDiv.classList.remove('completemicro-success');
+                    statusDiv.classList.add('completemicro-failure');
+                    messageDiv.innerText = status.message;
+                } else {
+                    messageDiv.innerText = status.message;
+                }
+        
+                // Populate models list
+                const modelsList = document.getElementById('modelsList');
+                models.forEach((model) => {
+                    const li = document.createElement('li');
+                    li.innerText = model;
+                    modelsList.appendChild(li);
+                });
+        
+                // Navigation buttons
+                document.getElementById('goBackButton').onclick = () => {
+                    window.location.href = '/project-completemicro';
+                };
+                
+                document.getElementById('goHomeButton').onclick = () => {
+                    window.location.href = '/';
+                };
+            </script>
             
             
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
