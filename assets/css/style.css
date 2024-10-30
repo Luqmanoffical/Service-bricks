@@ -1173,3 +1173,66 @@ color: white;
         .completemicro-button { padding: 8px 16px; border-radius: 4px; }
         .completemicro-success { background-color: #d1e7dd; color: #0f5132; }
         .completemicro-failure { background-color: #f8d7da; color: #842029; }
+/* complete end */
+
+/* About start */
+
+.about{
+    padding: 24px; 
+min-height: 100vh;
+    margin-top: 110px;
+}
+.right-bracket {
+   
+    background: linear-gradient(45deg, #407beb, #ff66b2, #800080, #b19cd9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+
+}
+.left-bracket
+{background: linear-gradient(45deg, #ffff00, #e3e300, #66ff66, #009900);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: lighter;
+
+}
+.about-hero{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-hero-smhead{
+    font-size: 1rem;
+}
+.about-owned{
+    font-weight: lighter;
+    font-size: 16px;
+    color: rgba(196, 193, 193, 0.74);
+}
+.about h1{
+    color: #FFF;
+    
+    font-size:3rem;
+}
+.about-gradient-background {
+ 
+    top: 0;
+    width: 100%;
+    height: 100%; /* Ensures it covers the parent */
+    background: radial-gradient(circle, rgba(52, 25, 71, 1) 0%, rgba(40, 32, 108, 0) 70%);
+    pointer-events: none; /* Disables pointer events */
+}
+.about-opensource{
+    color: white;
+    padding: 20px 100px;
+}
+.about-opensource h3{
+    color: white;
+    font-size:3rem;
+}
+.about-opensource p{
+    font-size: larger
+    ;
+}
