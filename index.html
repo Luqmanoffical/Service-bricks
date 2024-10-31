@@ -670,6 +670,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 
+window.addEventListener('scroll', function () {
+    const gradientText = document.querySelector('.gradient-text');
+    if (!gradientText) return;
+
+    // Calculate a dynamic hue based on scroll position
+    const scrollY = window.scrollY;
+    const hue1 = (scrollY * 0.5) % 360;    // Adjust multiplier for speed of change
+    const hue2 = (scrollY * 0.5 + 120) % 360;
+    const hue3 = (scrollY * 0.5 + 240) % 360;
+
+    // Set new gradient colors based on calculated hues
+    gradientText.style.background = `linear-gradient(90deg, hsl(${hue1}, 100%, 70%), hsl(${hue2}, 100%, 70%), hsl(${hue3}, 100%, 70%))`;
+    gradientText.style.webkitBackgroundClip = 'text';
+    gradientText.style.webkitTextFillColor = 'transparent';
+});
+
+
     AOS.init();
 
   </script>

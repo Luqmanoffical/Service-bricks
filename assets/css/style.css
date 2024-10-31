@@ -963,6 +963,11 @@ h1 {
 
 
 
+
+
+
+
+
 .content-wrapper {
     display: flex;
 }
@@ -989,13 +994,19 @@ h1 {
 
 .gradient-text {
     font-size: 20px;
-    background: linear-gradient(90deg, #c777c086,#8a2be2, #6c757d); /* Define gradient colors */
+    background: linear-gradient(90deg, #c777c086, #8a2be2, #6c757d); /* Initial gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.scrolled-text {
+    font-size: 20px;
+    background: linear-gradient(90deg, #ff6347, #ffa500); /* New gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent; /* For fallback */
-
 }
-
 
 
 
