@@ -911,7 +911,46 @@ h1 {
 
 
 /* ---------------------------------Home page start--------------------------------- */
+/* custom button */
+.gradient-button {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 16px;
+    
+    color: white;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
 
+.gradient-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    padding: 2px;
+    background: linear-gradient(90deg, #8a2be2, #feb47b);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude; 
+    -webkit-mask-composite: destination-out;
+    z-index: -1;
+}
+
+
+
+.gradient-button:hover {
+    background-color: #1a1a1a;
+}
+/* button end */
 
 
 
@@ -919,6 +958,45 @@ h1 {
 .img-fluid-5-logos{
     height: 50px;
 }
+
+
+
+.content-wrapper {
+    display: flex;
+}
+
+.divider {
+    position: relative;
+    width: 2px;
+    height: 100%;
+    min-height: 200px;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px; /* Thickness at the top */
+    height: 100%;
+    background: #ccc;
+    clip-path: polygon(50% 0%, 100% 100%, 0 100%);
+}
+
+.gradient-text {
+    font-size: 20px;
+    background: linear-gradient(90deg, #c777c086,#8a2be2, #6c757d); /* Define gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* For fallback */
+
+}
+
+
+
+
 
 /* home benefits-card section start */
 .benefit-card {
@@ -992,3 +1070,442 @@ h1 {
   }
   
 /* stright line with text start */
+
+
+/* stright line with text end */
+
+
+/* logos section start */
+
+
+.company-logo-section{
+    border: 1px solid #ffffff3d;
+    margin: 20px;
+    padding: 40px;
+    
+}
+
+.company-img-title{
+    color: white;
+}
+.company-logo-text{
+    margin-top: 20px;
+color: rgba(255, 255, 255, 0.616);
+}
+
+.company-logo-title{
+    color: white;
+}
+
+.company-logo-text .check-icon {
+    width: 16px; /* Adjust the size as needed */
+    margin-right: 8px; /* Adds space between icon and text */
+    vertical-align: middle; /* Aligns icon with text */
+}
+
+.company-logo-text {
+    border-bottom: 1px solid #cccccc57; /* Adds the bottom line */
+    padding-bottom: 8px; /* Adds spacing above the line */
+    margin-bottom: 12px; /* Adds spacing below the line */
+    display: flex; /* Keeps the icon and text aligned */
+    align-items: center; /* Vertically centers the icon and text */
+}
+
+.check-icon {
+    width: 16px; /* Adjust icon size as needed */
+    margin-right: 8px; /* Adds space between icon and text */
+}
+
+
+
+/* home second last cards section start */
+
+
+.home-second-last-cards-section{
+border: 1px solid #ffffff3d;
+margin: 20px;
+background-color: #15131d;
+padding: 60px;
+}
+.home-second-last-cards-img{
+    height: 400px;
+    width: 500px;
+    padding-bottom: 20px;
+    
+    padding-right: 20px;
+}
+.custom-underline{
+    color:white;
+}
+  .second-last-second-text{
+    color: rgb(255, 255, 255);
+  }
+
+  .second-last-second-title{
+    color: white;
+    font-size: 50px;
+    color: #8a2be2;
+  }
+
+
+
+
+  /* card-2 */
+  /* Card Styles */
+  .card {
+    border: 1px solid rgba(255, 255, 255, 0.24); /* Border color */
+    background: #15131d; /* Card background color */
+    min-height: 700px; /* Minimum height */
+    border-radius: 30px; /* Rounded corners */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children to the start */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Padding for content */
+    position: relative; /* Position relative for absolute children */
+    
+}
+
+
+/* First Card Background */
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../imges/img/AI0.png'); /* Background image URL */
+    background-size:cover; /* Cover to fill the card */
+    filter: blur(35px); /* Adjust blur strength as needed */
+    z-index: 1; /* Make sure it's below content */
+    
+}
+.custom-underline-2{
+    color: #ffffff;
+}
+
+/* Content Wrapper for Card */
+.card-content {
+    position: relative; /* Relative positioning for the content */
+    z-index: 2; /* Make sure it's above the background */
+    color: rgb(95, 1, 1); /* Change text color if needed */
+    padding: 50px; /* Adjust padding as needed */
+    
+}
+
+
+/* Card Title */
+.card-title {
+    color: white;
+    font-size: 40px; /* Title font size */
+    text-align: left; /* Align title text to the left */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Card Description */
+.card-description {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 10px; /* Space between descriptions */
+    text-align: justify;
+}
+
+/* Ensure checkmark images in the descriptions are properly styled */
+.check-image {
+    width: 16px; /* Set a fixed width for the checkmark image */
+    height: 16px; /* Set a fixed height for the checkmark image */
+    margin-right: 5px; /* Space between image and text */
+    vertical-align: middle; /* Align image vertically with text */
+}
+
+/* Icons Row */
+.icons-row {
+    display: flex; /* Use flexbox to align icons in a row */
+    justify-content: space-evenly; /* Space out icons evenly */
+    margin-top: 20px; /* Space above the icons */
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+/* Icon Styles */
+.icon {
+    width: 60px; /* Set a fixed width for icons */
+    height: 60px; /* Set a fixed height for icons */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between icons */
+}
+/* home second last cards section end */
+
+/* home pricing section start */
+
+/* Section with Cover Background */
+.home-pricing-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: url('../imges/img/stars.svg') center/cover no-repeat; /* Cover image */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Styling */
+.home-pricing-section__logo {
+    width: 300px; /* Adjust logo size */
+    margin-bottom: 20px;
+}
+
+/* Content Styling */
+.home-pricing-section__content {
+    max-width: 600px; /* Center and limit content width */
+}
+
+/* Paragraph Styling */
+.home-pricing-section__text {
+   margin-top: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* Heading Styling */
+.home-pricing-section__heading {
+    font-size: 33px;
+    margin: 15px 0;
+}
+
+/* Button Styling */
+.home-pricing-section__button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #009ca0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-pricing-section__button:hover {
+    background-color: #006f72; /* Darken on hover */
+}
+
+
+
+
+/* subscriptions plan */
+/* Main Section */
+.pricing-subscription {
+    padding: 40px 20px;
+}
+
+/* Aligning Content with Flexbox */
+.pricing-subscription__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Left Side Info */
+.pricing-subscription__info {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+.pricing-subscription__title {
+    font-size: 40px;
+    
+    color: #8a2be2;
+}
+
+.pricing-subscription__description {
+    font-size: 22px;
+    color: #ffff;
+    text-align: justify;
+}
+
+/* Right Side (Cards) */
+.pricing-subscription__cards {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    flex-wrap: wrap; /* Wraps the cards on smaller screens */
+}
+
+/* Enlarged Card Styling */
+.pricing-card {
+    background-color: #21252927;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    max-width: 450px; /* Makes the card wider */
+    min-height: 400px; /* Adds a minimum height */
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #dddddd6b; /* Default border color */
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Other Styling */
+.pricing-card__plan {
+    font-size: 40px;
+    color: #8a2be2;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.pricing-card__cycle {
+    font-size: 16px;
+    color: #888;
+    text-align: start;
+    padding-top: 20px;
+}
+
+.pricing-card__cost {
+    font-size: 45px;
+    color: white;
+    margin: 15px 0;
+    text-align: start;
+    padding-top: 10px;
+}
+
+.pricing-card__button {
+    display: inline-block;
+    padding: 7px 120px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pricing-card__button:hover {
+    background-color: #006f72;
+}
+
+.pricing-card__feature {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 12px;
+}
+
+.check-feature {
+    position: relative;
+    padding-left: 30px; /* Adjust spacing to fit the icon */
+    line-height: 1.6;
+    background-image: url('../imges/icons/check.svg'); /* Path to check icon */
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px; /* Adjust size to match design */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .pricing-subscription__info {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .pricing-subscription__cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        max-width: 100%;
+        min-height: auto;
+    }
+    
+    .pricing-card__plan,
+    .pricing-card__cost {
+        text-align: center;
+    }
+    
+    .pricing-card__button {
+        padding: 10px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-subscription {
+        padding: 20px 10px;
+    }
+
+    .pricing-subscription__title {
+        font-size: 28px;
+    }
+
+    .pricing-card__plan {
+        font-size: 36px;
+    }
+    
+    .pricing-card__cost {
+        font-size: 38px;
+    }
+    
+    .pricing-card__button {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-subscription__title {
+        font-size: 24px;
+    }
+    
+    .pricing-card__plan {
+        font-size: 30px;
+    }
+    
+    .pricing-card__cost {
+        font-size: 32px;
+    }
+    
+    .pricing-card__button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/* home pricing section end */
+
+
+/* last card section start */
+
+.home-last-section-cards-icon{
+    width: 500px;
+    height: 350px;
+}
+
+.home-last-section-cards-card-title{
+    color: #8a2be2;
+    padding-top: 50px;
+}
+
+.home-last-section-cards-card-description{
+    color: #ffff;
+    padding-top: 10px;
+}
+
+
+
+/* last card section end */
+
+
+/* ------------------------------home section completed---------------------------------- */
+
+
+
+
