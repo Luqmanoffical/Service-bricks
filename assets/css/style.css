@@ -17,6 +17,7 @@ body {
 }
 
 .navbar-dark .home-link,
+.pricing-link,
 .features-link,
 .documatation-link,
 .getstarted-link,
@@ -28,7 +29,7 @@ body {
     font-size: larger;
     text-decoration: none;
 }
-
+.pricing-link:hover,
 .navbar-dark .home-link:hover,
 .features-link:hover,
 .documatation-link:hover,
