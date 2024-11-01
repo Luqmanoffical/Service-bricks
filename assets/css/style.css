@@ -1675,8 +1675,42 @@ color: purple;
     min-height: 100vh;
         margin-top: 110px;
         color: #ffff;
+        position: relative;
     }
     .justify{
         text-align: justify;
     }
 
+  
+      
+      .consulting-background-image {
+        background-image: url('../imges/img/codeface.p'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        /* filter: blur(8px); This blurs the image */
+        /* position: absolute; */
+        width: 100%;
+        z-index: 1;
+      }
+      /* consulting end  */
+      /* Document start */
+      #documentation {
+
+        padding: 24px; 
+        min-height: 100vh;
+            margin-top: 110px;
+            color: #ffff;
+        }
+
+        /* Documentation end  */
+
+        /* get-started start */
+
+        #get-started{
+            padding: 24px; 
+            min-height: 100vh;
+                margin-top: 110px;
+                color: #ffff;
+                
+        }
