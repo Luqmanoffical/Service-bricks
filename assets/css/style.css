@@ -28,10 +28,11 @@ body {
 .reg-link {
     color: white !important;
     margin-left: 1rem;
-    font-size:14px;
-   
+    font-size: 14px;
+
     text-decoration: none;
 }
+
 .pricing-link:hover,
 .navbar-dark .home-link:hover,
 .features-link:hover,
@@ -1029,7 +1030,8 @@ h1 {
 /* home benefits-card section start */
 
 .benefit-card {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -1039,7 +1041,8 @@ h1 {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 /* Hover effect with darkened background image and visible border */
@@ -1048,8 +1051,10 @@ h1 {
     background-size: cover;
     background-blend-mode: multiply;
     /* Darkens the background image */
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
 
 
@@ -2196,9 +2201,10 @@ option {
 
 @media screen and (max-width:575px) {
 
-    .dashboard-hero{
+    .dashboard-hero {
         padding: 0rem 2rem;
     }
+
     .user-dashboard-card h1 {
         font-size: 1.3rem;
         margin-bottom: 1rem;
@@ -2207,47 +2213,58 @@ option {
     .user-dashboard-card p {
         font-size: 0.8rem;
     }
+
     .user-dashboard-card h1 {
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
+
     .user-dashboard-btn {
         padding: 0.4rem !important;
         font-size: 9px;
     }
-    .table-header{
+
+    .table-header {
         padding: 0rem;
     }
-    .table-btn-div{
+
+    .table-btn-div {
         display: flex;
         margin-bottom: 1rem;
     }
 }
+
 @media (min-width:575px) and (max-width:768px) {
-    .dashboard-hero{
+    .dashboard-hero {
         padding: 0rem 2rem;
     }
-    .table-btn-div{
+
+    .table-btn-div {
         display: flex;
         margin-bottom: 1rem;
     }
+
     .user-dashboard-btn {
         font-size: 13px;
         padding: 0.6rem !important;
     }
 }
-@media (min-width:768px) and (max-width:992px){
-    .dashboard-hero{
+
+@media (min-width:768px) and (max-width:992px) {
+    .dashboard-hero {
         padding: 0rem 2rem;
     }
+
     .user-dashboard-btn {
         font-size: 11px;
         padding: 10px !important;
     }
+
     .user-dashboard-card h1 {
         font-size: 1.7rem;
         margin-bottom: 1rem;
     }
+
     .user-dashboard-card p {
         font-size: 1rem;
     }
@@ -2573,19 +2590,23 @@ a {
 }
 
 
-<<<<<<< HEAD
-=======
 
-        
+
 .documentation-rounded-div {
     position: relative;
     /* height: 100vh; Set height relative to viewport height */
-    width: 70vw; /* Use a wider width for smaller screens */
-    max-width: 1200px; /* Limit max width for large screens */
-    margin: 0 auto; /* Centers the div */
-    border-radius: 20px; /* Adjusts the roundness */
-    overflow: hidden; /* Ensures children don’t overflow */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    width: 70vw;
+    /* Use a wider width for smaller screens */
+    max-width: 1200px;
+    /* Limit max width for large screens */
+    margin: 0 auto;
+    /* Centers the div */
+    border-radius: 20px;
+    /* Adjusts the roundness */
+    overflow: hidden;
+    /* Ensures children don’t overflow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Optional shadow effect */
 }
 
 .documentation-rounded-div::before {
@@ -2595,34 +2616,43 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../imges/img/concept.jpg') no-repeat right / cover; /* Background image */
-    filter: blur(8px); /* Adjust blur level */
-    z-index: 0; /* Places it behind the content */
+    background: url('../imges/img/concept.jpg') no-repeat right / cover;
+    /* Background image */
+    filter: blur(8px);
+    /* Adjust blur level */
+    z-index: 0;
+    /* Places it behind the content */
 }
 
-.documentation-rounded-div h2, 
+.documentation-rounded-div h2,
 /* .documentation-rounded-div h5,  */
 .documentation-rounded-div p {
-    position: relative; /* Ensures text is above the background */
-    color: white; /* Change text color for visibility */
-    z-index: 1; /* Places text above the blurred background */
-     /* text-align: center; Center text for better appearance */
+    position: relative;
+    /* Ensures text is above the background */
+    color: white;
+    /* Change text color for visibility */
+    z-index: 1;
+    /* Places text above the blurred background */
+    /* text-align: center; Center text for better appearance */
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .documentation-rounded-div {
         /* height: 70vh;  */
-        width: 95vw; /* Increase width for tablets */
+        width: 95vw;
+        /* Increase width for tablets */
     }
 
     .documentation-rounded-div h2 {
-        font-size: 2em; /* Responsive heading size */
+        font-size: 2em;
+        /* Responsive heading size */
     }
 
-    .documentation-rounded-div h4, 
+    .documentation-rounded-div h4,
     .documentation-rounded-div p {
-        font-size: 1.2em; /* Responsive paragraph size */
+        font-size: 1.2em;
+        /* Responsive paragraph size */
     }
 }
 
@@ -2632,17 +2662,18 @@ a {
     } */
 
     .documentation-rounded-div h2 {
-        font-size: 1.8em; /* Smaller heading size for mobile */
+        font-size: 1.8em;
+        /* Smaller heading size for mobile */
     }
 
-    .documentation-rounded-div h4, 
+    .documentation-rounded-div h4,
     .documentation-rounded-div p {
-        font-size: 1em; /* Smaller paragraph size for mobile */
+        font-size: 1em;
+        /* Smaller paragraph size for mobile */
     }
 }
 
-        /* Documentation end  */
->>>>>>> 2c526fb98387b5530058847bba0fc21da3046b15
+/* Documentation end  */
 
 .consulting-background-image {
     background-image: url('../imges/img/codeface.p');
@@ -2656,7 +2687,6 @@ a {
     z-index: 1;
 }
 
-<<<<<<< HEAD
 /* consulting end  */
 /* Document start */
 #documentation {
@@ -2678,24 +2708,27 @@ a {
     color: #ffff;
 
 }
-=======
-        #get-started{
-            padding: 24px; 
-            min-height: 100vh;
-                margin-top: 110px;
-                color: #ffff;
-                
-        }
-        .get-main-section {
-            border: 1px solid gray; /* Specify width, style, and color */
-            border-radius: 20px;
-            padding: 10px;
-            margin: 40px 0px;
-        }
-        
-        
+
+#get-started {
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 110px;
+    color: #ffff;
+
+}
+
+.get-main-section {
+    border: 1px solid gray;
+    /* Specify width, style, and color */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px 0px;
+}
+
+
 .get-benefit-card-1 {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -2705,19 +2738,23 @@ a {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 
 .get-benefit-card-1:hover {
     background-image: url('../imges/img/CacheMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
     background-size: cover;
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
 
 .get-benefit-card-2 {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -2727,18 +2764,23 @@ a {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 
 .get-benefit-card-2:hover {
-    background-image: url('../imges/img/NotificationMicroservice 0.webp'), linear-gradient(to right,  rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
+    background-image: url('../imges/img/NotificationMicroservice 0.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
     background-size: cover;
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
+
 .get-benefit-card-3 {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -2748,18 +2790,23 @@ a {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 
 .get-benefit-card-3:hover {
-    background-image: url('../imges/img/LoggingMicroservice.webp'), linear-gradient(to right,  rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
+    background-image: url('../imges/img/LoggingMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
     background-size: cover;
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
+
 .get-benefit-card-4 {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -2769,23 +2816,26 @@ a {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 
 .get-benefit-card-4:hover {
     background-image: url('../imges/img/SecurityMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
     background-size: cover;
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
 
-.get-benefit-card h1{
+.get-benefit-card h1 {
     color: white;
     font-size: 25px;
 }
 
-.get-benefit-card p{
+.get-benefit-card p {
     color: rgba(255, 255, 255, 0.61);
     font-size: 16px;
     padding-top: 12px;
@@ -2798,6 +2848,7 @@ a {
     margin-top: auto;
     background-color: transparent;
 }
+
 .get-explore-more {
     display: flex;
     align-items: center;
@@ -2806,6 +2857,7 @@ a {
 }
 
 @media (max-width: 768px) {
+
     .get-benefit-card-1,
     .get-benefit-card-2,
     .get-benefit-card-3,
@@ -2815,6 +2867,7 @@ a {
 }
 
 @media (max-width: 480px) {
+
     .get-benefit-card-1,
     .get-benefit-card-2,
     .get-benefit-card-3,
@@ -2822,15 +2875,16 @@ a {
         height: auto;
     }
 }
+
 /* get Started end */
 /*Pricing start  */
 
-#pricing{
-    padding: 24px; 
+#pricing {
+    padding: 24px;
     min-height: 100vh;
-        margin-top: 110px;
-        color: #ffff;
-        
+    margin-top: 110px;
+    color: #ffff;
+
 }
 
 
@@ -2844,11 +2898,10 @@ a {
     align-items: center;
     justify-content: center;
     /* height: 100vh; Full viewport height */
-    background: url('../imges/img/stars.svg')  ; /* Cover image */
+    background: url('../imges/img/stars.svg');
+    /* Cover image */
     background-size: contain;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
->>>>>>> 2c526fb98387b5530058847bba0fc21da3046b15
