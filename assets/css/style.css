@@ -2269,6 +2269,72 @@ color: purple;
             color: #ffff;
         }
 
+
+        
+.documentation-rounded-div {
+    position: relative;
+    /* height: 100vh; Set height relative to viewport height */
+    width: 70vw; /* Use a wider width for smaller screens */
+    max-width: 1200px; /* Limit max width for large screens */
+    margin: 0 auto; /* Centers the div */
+    border-radius: 20px; /* Adjusts the roundness */
+    overflow: hidden; /* Ensures children don’t overflow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.documentation-rounded-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../imges/img/concept.jpg') no-repeat right / cover; /* Background image */
+    filter: blur(8px); /* Adjust blur level */
+    z-index: 0; /* Places it behind the content */
+}
+
+.documentation-rounded-div h2, 
+/* .documentation-rounded-div h5,  */
+.documentation-rounded-div p {
+    position: relative; /* Ensures text is above the background */
+    color: white; /* Change text color for visibility */
+    z-index: 1; /* Places text above the blurred background */
+     /* text-align: center; Center text for better appearance */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .documentation-rounded-div {
+        /* height: 70vh;  */
+        width: 95vw; /* Increase width for tablets */
+    }
+
+    .documentation-rounded-div h2 {
+        font-size: 2em; /* Responsive heading size */
+    }
+
+    .documentation-rounded-div h4, 
+    .documentation-rounded-div p {
+        font-size: 1.2em; /* Responsive paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* .documentation-rounded-div {
+        height: 60vh; 
+    } */
+
+    .documentation-rounded-div h2 {
+        font-size: 1.8em; /* Smaller heading size for mobile */
+    }
+
+    .documentation-rounded-div h4, 
+    .documentation-rounded-div p {
+        font-size: 1em; /* Smaller paragraph size for mobile */
+    }
+}
+
         /* Documentation end  */
 
         /* get-started start */
