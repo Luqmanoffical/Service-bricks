@@ -44,7 +44,9 @@ body {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
 }
-
+.lite-purple{
+    color: #6b21a8;
+}
 .login-btn {
     background: linear-gradient(to right, #a855f7, #6b21a8);
     border: none;
