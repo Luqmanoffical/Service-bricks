@@ -1012,6 +1012,7 @@ h1 {
 
 
 /* home benefits-card section start */
+
 .benefit-card {
     border: 1px solid transparent;
     border-radius: 11px;
@@ -1023,7 +1024,17 @@ h1 {
     flex-direction: column;
     height: 300px;
     position: relative;
+    transition: background 0.3s ease;
 }
+
+/* Hover effect with darkened background image */
+.benefit-card:hover {
+    background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
+    background-size: cover;
+    background-blend-mode: multiply; /* Darkens the background image */
+}
+
+
 
 .feature-benefit-icons {
     height: 35px;
