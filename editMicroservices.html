@@ -65,7 +65,7 @@
             
               <div class="container edit-container">
                 <h1 class="text-2xl font-bold mb-4">Edit Microservice</h1>
-                <button id="addClassButton" class="mb-4 edit-button btn">Add New Class</button>
+                <button id="addClassButton" class="mb-4 gradient-button btn">Add New Class</button>
                 
                 <div id="classGrid" class="row">
                     <!-- Dynamic Class Cards will be appended here -->
@@ -196,7 +196,7 @@
                     classGrid.innerHTML = ''; // Clear existing classes
                     classes.forEach((cls, index) => {
                         const classCard = document.createElement('div');
-                        classCard.className = "col-md-4 edit-class";
+                        classCard.className = "col-10 col-md-4 edit-class";
                         classCard.innerHTML = `
                             <h3>
                                 <input type="text" value="${cls.name}" oninput="updateClassName(${index}, this.value)" placeholder="Class Name" class="form-control mb-2" />
@@ -213,7 +213,7 @@
                                         <option value="Number">Number</option>
                                         <option value="Boolean">Boolean</option>
                                     </select>
-                                    <button type="submit" class="btn edit-button">Add</button>
+                                    <button type="submit" class="btn login-btn">Add</button>
                                 </form>
                             </div>
                         `;

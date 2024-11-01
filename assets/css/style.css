@@ -934,6 +934,7 @@ h1 {
 .gradient-button::before {
     content: '';
     position: absolute;
+    
     top: 0;
     left: 0;
     right: 0;
@@ -953,6 +954,7 @@ h1 {
 
 .gradient-button:hover {
     background-color: #1a1a1a;
+    color: white;
 }
 /* button end */
 
@@ -2067,7 +2069,24 @@ padding: 60px;
 .edit-container { margin-top: 100px; 
 color: white;
  }
-.edit-class { border: 1px solid #ccc; border-radius: 5px; padding: 20px;margin: 20px; }
+.edit-class {
+    border-radius: 5px;
+     
+    
+     margin: 20px;
+    padding: 20px;
+    border: 1px solid transparent; /* Initially transparent border */
+background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+background-clip: padding-box, border-box;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+}
+    
+    
+
 .edit-button { background-color: #007bff; color: white; }
 /* Edit end */
 
@@ -2081,20 +2100,43 @@ color: white;
 .project-microservice-card {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #dee2e6;
+    border: 1px solid transparent; /* Initially transparent border */
+/* border-radius: 11px; */
+background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+background-clip: padding-box, border-box;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    
+    /* border: 1px solid #dee2e6; */
     border-radius: .375rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
 }
 .project-button {
     margin-right: 10px;
 }
 .project-assembly-section {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 
     border: 1px solid #dee2e6;
     border-radius: .375rem;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .project-microservice-card {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-microservice-card {
+        margin: 10px auto;
+        padding: 10px;
+    }
 }
 /* Project Dashboard end */
 /* Project Dashboard end */
