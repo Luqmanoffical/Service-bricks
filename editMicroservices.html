@@ -34,6 +34,9 @@
                               <li class="nav-item">
                                   <a class="features-link" href="./features.html">Features</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="pricing-link" href="./pricing.html">Pricing</a>
+                            </li>
                               <li class="nav-item ">
                                   <a class="getstarted-link " href="./get.html">  Get Started</a>
                               </li> <li class="nav-item">
@@ -47,22 +50,22 @@
                                   <a class="about-link" href="./about.html">About</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="reg-link" href="./Register.html">Register</a>
+                                  <a class="reg-link" href="./register.html">Register</a>
                               </li>
                           </ul>
             
              
                           <!-- Log In button aligned to the right -->
                           <div class="d-flex ms-auto mt-2 mt-lg-0">
-                              <a href="./Login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+                              <a href="./login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
                               </a>     </div>
                       </div>
                   </div>
               </nav>
             
               <div class="container edit-container">
-                <h1 class="text-2xl font-bold mb-4">Edit Microservice</h1>
-                <button id="addClassButton" class="mb-4 edit-button btn">Add New Class</button>
+                <h1 class="text-2xl font-bold mb-4 lite-purple">Edit Microservice</h1>
+                <button id="addClassButton" class="mb-4 gradient-button btn">Add New Class</button>
                 
                 <div id="classGrid" class="row">
                     <!-- Dynamic Class Cards will be appended here -->
@@ -102,7 +105,7 @@
                                             Conditions</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3" href="./Blog.html">Blog</a>
+                                        <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3" href="./blog.html">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -193,13 +196,13 @@
                     classGrid.innerHTML = ''; // Clear existing classes
                     classes.forEach((cls, index) => {
                         const classCard = document.createElement('div');
-                        classCard.className = "col-md-4 edit-class";
+                        classCard.className = "col-10 col-md-4 edit-class";
                         classCard.innerHTML = `
                             <h3>
                                 <input type="text" value="${cls.name}" oninput="updateClassName(${index}, this.value)" placeholder="Class Name" class="form-control mb-2" />
                             </h3>
                             <div>
-                                <h4 class="font-semibold">Properties</h4>
+                                <h4 class="font-semibold lite-purple">Properties</h4>
                                 <ul class="mb-4">
                                     ${cls.properties.map(prop => `<li>${prop.name} (${prop.type})</li>`).join('')}
                                 </ul>
@@ -210,7 +213,7 @@
                                         <option value="Number">Number</option>
                                         <option value="Boolean">Boolean</option>
                                     </select>
-                                    <button type="submit" class="btn edit-button">Add</button>
+                                    <button type="submit" class="btn login-btn">Add</button>
                                 </form>
                             </div>
                         `;

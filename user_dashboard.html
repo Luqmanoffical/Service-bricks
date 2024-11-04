@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>User Dashboard</title>
+    <link rel="icon" href="./assets/imges/logo/brickslogomini.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,155 +35,158 @@
                 <!-- Align items to the start on small screens -->
                 <ul class="navbar-nav mb-2 mb-lg-0 text-start text-lg-center">
                     <li class="nav-item">
-                        <a class="home-link" aria-current="page" href="index.html">Home</a>
+                        <a class="home-link active" aria-current="page" href="/index.html"><span>Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="features-link" href="features.html">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="pricing-link" href="pricing.html">Pricing</a>
+                        <a class="features-link" href="./features.html">Features</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="getstarted-link " href="getStarted.html"> Get Started</a>
+                        <a class="getstarted-link " href="./get.html"> Get Started</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="documatation-link" href="documentation.html">Documentation </a>
+                        <a class="documatation-link" href="./documatation.html">Documentation </a>
                     </li>
                     <li class="nav-item">
-                        <a class="consulting-link" href="consulting.html">Consulting</a>
+                        <a class="consulting-link" href="./consulting.html">Consulting </a>
                     </li>
                     <li class="nav-item">
-                        <a class="about-link active" href="about.html"><span class="purple">About</span></a>
+                        <a class="about-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="reg-link" href="register.html">Register</a>
+                        <a class="reg-link" href="./Register.html">Register</a>
                     </li>
                 </ul>
 
+
                 <!-- Log In button aligned to the right -->
                 <div class="d-flex ms-auto mt-2 mt-lg-0">
-                    <a href="login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+                    <a href="./Login.html" class="text-light"><button type="button" class="btn login-btn">Log
+                            In</button>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Hero section start -->
 
-    <section class="container-fluid about about-gradient-background ">
-        <div class="about-hero">
-            <h5 class="about-hero-smhead"> <span class="left-bracket">[</span> <span class="about-owned"> OWNED AND
-                    MAINTAINED BY </span> <span class="right-bracket">]</span> </h5>
-            <h1>
-                HOLO MODULAR
-            </h1>
-            <p class="text-white  p-4">Our goal is to develop new and innovative technologies to compliment an augmented
-                and virtual reality world.</p>
-            <button class="btn gradient-button px-2 px-lg-4 py-2 mb-4"
-                onclick="window.open('https://holomodular.com/')">VISIT OUR WEBSITE </button>
-        </div>
-        <div class="about-opensource">
 
-            <h3 class="p-1 p-lg-3 text-center">
-                open source software
-            </h3>
-            <p class="text-center">
-                ServiceBricks is FREE, open-source, enterprise-grade software that enables developers to build and
-                deploy microservices-based applications. It is available under the MIT permissive software license.
-            </p>
-
+    <div class="dashboard-hero container-fluid">
+        <div class="row">
+            <h1 class="text-2xl font-bold mb-4">User Dashboard</h1>
         </div>
 
-        <section id="about-mit" class="border text-white border-white about-mit mx-0 mx-md-5 my-3 p-3 p-md-5">
-            <h3 class="text-center fw-bold">
-                The MIT License (MIT)
-            </h3>
-            <p>
-
-                Copyright © 2024 HoloModular LLC
-            </p>
-            <p>
-                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-                associated documentation files (the “Software”), to deal in the Software without restriction, including
-                without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-                copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
-                following conditions:
-            </p>
-            <p>
-                The above copyright notice and this permission notice shall be included in all copies or substantial
-                portions of the Software.
-            </p>
-            <p>
-                THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-                LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-                NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-                SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-            </p>
-
-        </section>
-
-        <section class="about-impressum border-top mx-4 mt-5">
-            <div class="text-center">
-                <h2 class="text-white p-4">Impressum</h2>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <div class="card text-white col-sm-12 col-md-12 col-md-lg-12 user-dashboard-card">
+                    <p class="col-sm-12 col-md-12 col-lg-12"><span class="fw-bold bg-purple">Email </span>:
+                        user@example.com</p>
+                    <p class="col-sm-12 col-md-12 col-lg-12"><span class="fw-bold bg-purple">Subscription Status
+                        </span>: free</p>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button class="btn user-dashboard-btn" onclick="handleUpgrade()">Upgrade Account</button>
+                        <button class="btn user-dashboard-btn ms-2">Change Password</button>
+                    </div>
+                </div>
             </div>
-            <div class="row text-white Impressum-about-content">
+        </div>
 
-                <div class="col-12 col-md-6 col-lg-3 p-3">
-                    <img src="./assets/imges/logo/HoloLogo.png" alt="holo-logo" class="Impressum-about-logo">
-                    <h3>Company:</h3>
-                    <p class="text-justify">HoloMoodular LLc</p>
-
+        <div class="row my-4">
+            <div class="col-md-6 mb-4">
+                <div class="card text-white user-dashboard-card">
+                    <h1 class="fw-bold bg-purple">Announcements</h1>
+                    <p>Stay tuned for upcoming features!</p>
                 </div>
-
-
-
-                <div class="col-12 col-md-6 col-lg-3   p-3">
-                    <h3>Corporate Address:</h3>
-                    <p>5620 Crest Creek Dr jacksonvile, FL 32258</p>
-                </div>
-
-
-
-                <div class="col-12 col-md-6 col-lg-3   p-3">
-                    <h3>Contact:</h3>
-                    <p>Email: <a href="">Support@HoloModular.com</a></p>
-                    <p>Website: <a href="">HoloModular.com</a></p>
-                </div>
-
-
-
-                <div class="col-12 col-md-6 col-lg-3   p-3">
-                    <h3>Company Registration:</h3>
-                    <p>State of Florida, USA</p>
-                </div>
-
-
-                <div class="col-12 col-md-6 col-lg-12 d-flex flex-column align-items-lg-center   ">
-                    <h3>Managing Director:</h3>
-                    <p>Danny Logsdon, CEO</p>
-                </div>
-
-
             </div>
+            <div class="col-md-6 mb-4">
+                <div class="card text-white user-dashboard-card">
+                    <h1 class="fw-bold bg-purple">Help</h1>
+                    <p>If you need assistance, please contact <span class="fw-bold bg-purple">support@example.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-md-12">
+                <div class="card text-white col-sm-12 col-md-12 col-md-lg-12 user-dashboard-card">
+                    <div class="card-header table-header">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h1 class="card-title fw-bold bg-purple">Add Project</h1>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-end">
+                                    <div class="row">
+                                        <div class="col-md-12 d-flex table-btn-div">
+                                            <button class="btn user-dashboard-btn"
+                                                onclick="handleCreateProject()">Create New
+                                                Project</button>
+                                            <button class="btn user-dashboard-btn ms-2"
+                                                onclick="handleCreateMicroservice()">Create
+                                                Microservice</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row table-responsive">
+                            <div class="col-12 inner-div">
+                                <table id="dataTable" class="col-md-12">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr No.</th>
+                                            <th>Project</th>
+                                            <th>Description for Project</th>
+                                            <th>Create Date</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Project 1</td>
+                                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas vitae
+                                                mollitia</td>
+                                            <td>2023-01-01</td>
+                                            <td>
+                                                <table>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a class="btn text-warning update-project-btn"
+                                                                    onclick="handleEditProject(1)"><i
+                                                                        class="fa-solid fa-pen-to-square text-warning"></i></a>
+                                                            </td>
+                                                            <td><a class="btn text-danger delete-project-btn text-danger"
+                                                                    onclick="handleDeleteProject(1)"><i
+                                                                        class="fa-solid fa-trash"></i></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        </section>
+    </div>
 
-
-
-
-
-    </section>
+    <!-- Footer Section Start -->
     <!-- Footer -->
     <footer class="footer">
-        <div class=" py-3  border-top border-light-subtle">
+        <div class=" py-3 px-4 border-top border-light-subtle">
             <div class="   overflow-hidden">
                 <div class="row gy-4 align-items-center">
                     <!-- Logo Section -->
-                    <div class="img-div col-12 col-md-12 col-lg-2 text-center text-md-start">
-                        <a href="#!">
+                    <div class="img-div col-12 col-md-12 col-lg-2  text-center text-md-start">
+                        <a href="/index.html">
                             <img src="./assets/imges/logo/bricksLogo.png" alt="Logo" class="footer-logo">
                         </a>
                     </div>
@@ -214,7 +219,6 @@
                             </li>
                         </ul>
                     </div>
-
 
                     <!-- Social Media Section -->
                     <div class="col-12 col-md-12 col-lg-2 text-center">
@@ -276,27 +280,68 @@
 
             <!-- Copyright Section -->
             <div class=" py-2 ">
-                <div class="  ">
+                <div class="">
                     <div class="text-center text-secondary">
                         Copyright © 2024 HoloModule. All rights reserved.
                     </div>
                     <div class="text-center text-secondary pointer" onclick="window.open('https://glaxit.com/')">
-                        Design & Develop by <span class="gradient-text">Glaxit </span>
+                        Design & Develop by <span class="gradient-text">Glaxit</span>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- Footer Section End -->
+
+    <!-- SCRIPT TAGS START -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
+    <script>
+        // ANIMATIONS  INITIALIZED START
 
+        AOS.init();
 
+        // ANIMATIONS  INITIALIZED END
 
+        // DATATABLE FUNCTIONALITY START
+
+        $(document).ready(function () {
+            $('#dataTable').DataTable({
+                ordering: false,   // Disable sorting
+                processing: true,   // Enable processing indicator
+                searching: false,   // Disable searching
+                lengthChange: false    // Hide "Show entries" dropdown
+            });
+        });
+
+        // DATATABLE FUNCTIONALITY END
+
+        function handleUpgrade() {
+            alert("Upgrade functionality goes here!");
+        }
+
+        function handleCreateProject() {
+            alert("Create new project functionality goes here!");
+        }
+
+        function handleCreateMicroservice() {
+            alert("Create microservice functionality goes here!");
+        }
+
+        function handleEditProject(id) {
+            alert(`Edit project ${id} functionality goes here!`);
+        }
+
+        function handleDeleteProject(id) {
+            alert(`Project ${id} deleted!`);
+            // Code to delete the project from the DOM would go here
+        }
+    </script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
 
 </html>

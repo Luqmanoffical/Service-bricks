@@ -34,6 +34,9 @@
                               <li class="nav-item">
                                   <a class="features-link" href="./features.html">Features</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="pricing-link" href="./pricing.html">Pricing</a>
+                            </li>
                               <li class="nav-item ">
                                   <a class="getstarted-link " href="./get.html">  Get Started</a>
                               </li> <li class="nav-item">
@@ -47,14 +50,14 @@
                                   <a class="about-link" href="./about.html">About</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="reg-link" href="./Register.html">Register</a>
+                                  <a class="reg-link" href="./register.html">Register</a>
                               </li>
                           </ul>
             
              
                           <!-- Log In button aligned to the right -->
                           <div class="d-flex ms-auto mt-2 mt-lg-0">
-                              <a href="./Login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+                              <a href="./login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
                               </a>     </div>
                       </div>
                   </div>
@@ -63,24 +66,24 @@
             
             <!-- Main Content -->
     <div class="container mt-28 mx-auto p-6 project-dashboard-title">
-        <h1 class="text-2xl font-bold mb-4">Project Dashboard</h1>
+        <h1 class="text-2xl font-bold mb-4 lite-purple">Project Dashboard</h1>
 
         <div class="mb-4">
-            <button onClick="createMicroservice()" class="btn btn-success project-button">Create New Microservice</button>
-            <button onClick="addExistingMicroservice()" class="btn btn-primary">Add Existing Microservice</button>
+            <button onClick="createMicroservice()" class="btn  gradient-button project-button">Create New Microservice</button>
+            <button onClick="addExistingMicroservice()" class="btn  gradient-button">Add Existing Microservice</button>
         </div>
 
         <div class="my-6">
-            <h2 class="text-xl font-semibold mb-4">Microservices</h2>
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-4" id="microserviceGrid"></div>
-            </div>
+            <h2 class="text-xl font-semibold mb-4 lite-purple">Microservices</h2>
+            
+                <div class="row g-4" id="microserviceGrid"></div>
+            
         </div>
 
         <div class="project-assembly-section">
-            <h2 class="text-lg font-semibold">Shared Assembly</h2>
+            <h2 class="text-lg font-semibold ">Shared Assembly</h2>
             <p>Manage your shared assemblies here.</p>
-            <button onClick="addAssembly()" class="btn btn-success mt-2">Add New Assembly</button>
+            <button onClick="addAssembly()" class="btn  gradient-button mt-2">Add New Assembly</button>
         </div>
     </div>
 
@@ -117,7 +120,7 @@
                                             Conditions</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3" href="./Blog.html">Blog</a>
+                                        <a class="nav-link link-secondary text-white fw-bold px-2 px-md-3" href="./blog.html">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -223,7 +226,7 @@
             const microserviceGrid = document.getElementById("microserviceGrid");
             microservices.forEach(microservice => {
                 const card = document.createElement("div");
-                card.className = "project-microservice-card";
+                card.className = "project-microservice-card col-11 col-md-4 col-lg-4";
                 card.innerHTML = `
                     <h3 class="text-lg font-bold">${microservice.name}</h3>
                     <p>${microservice.description}</p>

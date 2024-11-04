@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulting</title>
+    <title>Get Started</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        
+    
+        </style>
+        
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="/index.html">
                 <img class="nav-logo" src="./assets/imges/logo/bricksLogo.png" alt="logo" />
@@ -32,78 +40,181 @@
                         <a class="home-link active" aria-current="page" href="/index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="features-link" href="./features.html">Features</a>
+                        <a class="features-link" href="features.html">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="pricing-link" href="./pricing.html">Pricing</a>
+                        <a class="pricing-link" href="pricing.html">Pricing</a>
                     </li>
+                 
                     <li class="nav-item ">
-                        <a class="getstarted-link " href="./get.html">  Get Started</a>
+                        <a class="getstarted-link " href="getStarted.html"><span class="purple">  Get Started</span></a>
+                    </li> <li class="nav-item">
+                        <a class="documatation-link" href="documentation.html">Documentation </a>
                     </li>
-                    
-                <li class="nav-item">
-                    <a class="documatation-link" href="./documentation.html">Documentation </a>
-                </li>
+                          
                     <li class="nav-item">
-                        <a class="consulting-link" href="./consulting.html"><span class="purple">Consulting </span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="about-link" href="./about.html">About</a>
+                        <a class="consulting-link" href="consulting.html">Consulting</a>
                     </li>
                     <li class="nav-item">
-                        <a class="reg-link" href="./register.html">Register</a>
+                        <a class="about-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="reg-link" href="register.html">Register</a>
                     </li>
                 </ul>
 
                 <!-- Log In button aligned to the right -->
                 <div class="d-flex ms-auto mt-2 mt-lg-0">
-                   <a href="./login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
+                   <a href="login.html" class="text-light"><button type="button" class="btn login-btn">Log In</button>
                   </a>
                 </div>
             </div>
         </div>
     </nav>
+<!-- Hero section start -->
 
-
-<div class="consulting  consulting-background-image ">
- <div class="text-center">
-    <h1 class="p-0 p-md-3 fw-bolder">
-        Consulting Services
-    </h1>
-    <p class="p-3">
-        How Can We Help You?
-    </p>
+<div id="get-started" class="px-2 px-md-5">
+<div class="get-hero d-flex align-items-center justify-content-center flex-column
+">
+    <h1  class="py-3 fs-4 fs-md-1 text-center fw-bold">Example Applications</h1>
+<p class="px-2 px-md-5 py-3 text-center mx-0 mx-md-4"> Explore all of our example applications. From single, monolithic web applications (great for testing) to containerized, multi-web application deployments. These examples contain the basic building blocks needed to create and scale your own foundations quickly.</p>
+<button  class="btn gradient-button  px-4 py-2">
+    VIEW EXAMPLE REPO
+</button>
 </div>
+
+
+<div class="get-main-section">
+<div class="d-flex align-items-center justify-content-center flex-column">
+    <h1 class="fs-2 mt-3 py-2">Build Microservices Online with Artificial Intelligence</h1>
+<p class="fs-5 fw-light text-secondary ">Use our online tools to create microservices quickly and easily in just a few seconds. Try completely free!
+    </p>
+<button class="btn gradient-button  px-4 py-2 mt-3">
+    Register Now
+</button>
+</div >
+<div class="text-center py-4 px-1 px-md-5">
+<h1 class="fs-4 pb-2 ">Pre-Built Microservices</h1>
+<p class="fs-6 fw-lighter">
+    Use our online tools to create microservices quickly and easily in just a few seconds. Try completely free!
+</p>
+
+<div class="row p-2 p-md-5" id="get-benefit-cards ">
+
+   
+    <div class="col-12 col-lg-6 mb-4 ">
+        <div class="get-benefit-card get-benefit-card-1">
+            <h1 class="mt-3">Cache Microservice</h1>
+            <p>A Cache Microservice is a specialized component designed to store and manage key/value pair data with built-in expiration functionality. This type of microservice plays a crucial role in enhancing the performance of applications by reducing the latency associated with data retrieval.</p>
+            <div class="get-card-footer">
+                <span class="get-explore-more">VIEW CACHE REPO <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-4 ">
+        <div class="get-benefit-card get-benefit-card-2">
+            <h1 class="mt-3">Logging Microservice</h1>
+            <p>A Logging Microservice is an essential component of modern application architectures, providing structured logging capabilities that facilitate both service-scoped and centralized application logging. This microservice is particularly useful for monitoring, troubleshooting, and auditing web requests and responses, enhancing the overall observability of applications.</p>
+            <div class="get-card-footer">
+                <span class="get-explore-more">VIEW LOGGING REPO <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-4 ">
+        <div class="get-benefit-card get-benefit-card-3">
+            <h1 class="mt-3">Notification Microservice</h1>
+            <p>A Notification Microservice is a vital component in modern applications, enabling the effective delivery of notifications through various channels, including email and SMS. This microservice streamlines communication with users, enhancing engagement and providing timely updates about important events or actions within an application.</p>
+            <div class="get-card-footer">
+                <span class="get-explore-more">VIEW NOTIFICATION REPO<img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
+            </div>
+        </div>
+    </div>
+<div class="col-12 col-lg-6 mb-4 ">
+        <div class="get-benefit-card get-benefit-card-4">
+            <h1 class="mt-3">Security Microservice</h1>
+            <p>Authorization Microservice is a foundational component in securing modern applications, particularly in multi-application deployments. By utilizing JWT  bearer token support, this microservice provides robust authentication and authorization mechanisms that facilitate secure access to resources across different applications within an ecosystem.</p>
+            <div class="get-card-footer">
+                
+                <span class="get-explore-more">VIEW SECURITY REPO <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+</div>
+
 
 <div class="row">
-<div class="col-12 col-lg-6  px-0 px-md-5 py-3">
-    <p class="justify px-md-5 px-0 mx-3">
-        Our expert consultants work closely with your team to understand your unique challenges and goals, providing tailored solutions that streamline development, enhance scalability, and improve overall efficiency. Whether you're looking to optimize existing systems or implement new microservices from the ground up, we provide the expertise and support you need.
-    </p>
-</div>
+<div class="col-12 col-md-4">
+<h1 class="py-4">Database Providers Supported</h1>
+<p class="d-flex   py-2 border-top border-secondary">
+    <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+    Azure Data Tables</p>
 
-<div class="col-12 col-lg-6 px-0 px-md-5 py-3">
-    <p class="justify px-md-5 px-0 mx-3" > 
-        We guide you through best practices, architectural design, and implementation strategies, ensuring a seamless transition and long-term success. Partner with us and discover how ServiceBricks can transform your approach to software development, driving innovation and business growth.
-    </p>
-</div>
-
-</div>
-<p class="text-center">Contact our sales staff at <a href=""> Support@HoloModular.com</a></p>
-
-<div class="about-hero pt-4">
-    <h5 class="about-hero-smhead"> <span class="left-bracket">[</span> <span class="about-owned"> CONSULTING SERVICE BY  </span>  <span class="right-bracket">]</span>  </h5>
-    <h1>
-        Experts in Design
-    </h1>
-    </div> 
-<div class="d-flex align-items-center flex-column py-4">
-<p class="py-2 px-0 px-md-5 mx-0 mx-md-5 fs-md-5 fs-6 text-justify text-md-center">See how our team of experts can help you design and implement a microservices architecture that meets your unique needs.</p>
-
-    <button type="button" class="btn gradient-button  px-4 py-2">
-        GET IN TOUCH
-    </button>
+    <p class="d-flex   py-2 border-top border-secondary">
+        <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+        Azure Cosmos DB</p>
     
+        <p class="d-flex   py-2 border-top border-secondary">
+            <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+            Azure Sql</p>
+        
+
+            <p class="d-flex  py-2 border-top border-secondary">
+                <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                Entity Framework Core</p>
+            
+        
+                <p class="d-flex py-2 border-top border-secondary">
+                    <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                    In Memory</p>
+                
+    <p class="d-flex   py-2 border-top border-secondary">
+                        <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                        Microsoft Sql Server</p>
+                    
+                
+                    
+                    <p class="d-flex   py-2 border-top border-secondary">
+                        <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                        MongoDB
+</p>
+                
+                        <p class="d-flex   py-2 border-top border-secondary">
+                            <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                            Postgres   </p>
+                        
+                       
+                       
+                            <p class="d-flex   py-2 border-top border-secondary">
+                                <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                                Sqlite </p>
+                            
+                       
+   
+                            
+                                <p class="d-flex   py-2 border-top border-secondary">
+                                    <img src="./assets/imges/icons/check.svg" alt="Check Icon" class="px-2 img-fluid align-self-baseline">
+                                    More to come! </p>
+                                
+                            
+                                
+<button class="btn gradient-button my-3  px-4 py-2">Try it Now</button>
+</div>
+
+<div class="col-12 col-md-8 d-flex align-content-center justify-content-center px-2 px-md-5 flex-column">
+
+<p class="text-center">Exposes a storage platform-agnostic model and repository-based API, supporting both relational (SQL) and document (NoSQL) databases. Switch storage providers without impacting microservice operations.</p>
+<img src="./assets/imges/icons/logos.png" alt="database" class="img-fluid d-flex align-self-center" >
+</div>
+
+
 
 </div>
 
@@ -111,15 +222,14 @@
 
 
 
-
-       <!-- Footer -->
+   <!-- Footer -->
    <footer class="footer">
-    <div class=" py-3  border-top border-light-subtle">
+    <div class=" py-3 px-4 border-top border-light-subtle">
         <div class="   overflow-hidden">
             <div class="row gy-4 align-items-center">
                 <!-- Logo Section -->
-                <div class="img-div col-12 col-md-12 col-lg-2 text-center text-md-start">
-                    <a href="#!">
+                <div class="img-div col-12 col-md-12 col-lg-2  text-center text-md-start">
+                    <a href="/">
                         <img src="./assets/imges/logo/bricksLogo.png" alt="Logo" class="footer-logo">
                     </a>
                 </div>
@@ -219,9 +329,22 @@
         </div>
     </div>
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-csharp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-javascript.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-<script src="./assets/js/main.js"></script>
-</body>
 </html>

@@ -3,9 +3,11 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     overflow-x: hidden;
 }
-.purple{
-    color:#8a2be2 !important;
+
+.bg-purple {
+    color: #8a2be2 !important;
 }
+
 /* Header Section CSS Start */
 
 .navbar {
@@ -17,6 +19,7 @@ body {
 }
 
 .navbar-dark .home-link,
+.pricing-link,
 .features-link,
 .documatation-link,
 .getstarted-link,
@@ -24,11 +27,13 @@ body {
 .about-link,
 .reg-link {
     color: white !important;
-    margin-left: 1.2rem;
-    font-size: larger;
+    margin-left: 1rem;
+    font-size: 14px;
+
     text-decoration: none;
 }
 
+.pricing-link:hover,
 .navbar-dark .home-link:hover,
 .features-link:hover,
 .documatation-link:hover,
@@ -38,6 +43,22 @@ body {
 .reg-link:hover {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
+}
+
+.pricing-link.active,
+.home-link.active,
+.features-link.active,
+.documatation-link.active,
+.getstarted-link.active,
+.consulting-link.active,
+.about-link.active,
+.reg-link.active {
+    color: #8a2be2 !important;
+    border-bottom: 1px solid #8a2be2;
+}
+
+.lite-purple {
+    color: #6b21a8;
 }
 
 .login-btn {
@@ -79,16 +100,19 @@ body {
 footer {
     background: rgba(0, 0, 0, 0.274);
 }
-.footer-logo{
+
+.footer-logo {
     width: 100%;
-    height:auto;
+    height: auto;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
+
 .nav-link:hover {
     color: #8a2be2 !important;
 }
+
 .gradient-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -96,14 +120,17 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.gradient-text:hover{
+
+.gradient-text:hover {
     background: linear-gradient(to right, #00ffaa, #007740, #00b368);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.pointer{
+
+.pointer {
     cursor: pointer;
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
 
     .img-div {
@@ -111,30 +138,30 @@ footer {
         justify-content: center;
     }
 
-    .footer-logo{
+    .footer-logo {
         width: 50%;
-        height:auto;
-       display: inline-block;
-      padding: 10px;
+        height: auto;
+        display: inline-block;
+        padding: 10px;
     }
 
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-    .nav-logo{
-        width: 160px ;
-        }
-        
+    .nav-logo {
+        width: 160px;
+    }
+
     .img-div {
         display: flex;
         justify-content: center;
     }
 
-    .footer-logo{
+    .footer-logo {
         width: 50%;
-        height:auto;
-       display: inline-block;
-      padding: 10px;
+        height: auto;
+        display: inline-block;
+        padding: 10px;
     }
 
 }
@@ -918,7 +945,7 @@ h1 {
     position: relative;
     padding: 10px 25px;
     font-size: 16px;
-    
+
     color: white;
     background-color: transparent;
     border: 2px solid transparent;
@@ -932,6 +959,7 @@ h1 {
 .gradient-button::before {
     content: '';
     position: absolute;
+
     top: 0;
     left: 0;
     right: 0;
@@ -939,10 +967,10 @@ h1 {
     border-radius: 8px;
     padding: 2px;
     background: linear-gradient(90deg, #8a2be2, #feb47b);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-    mask-composite: exclude; 
+    mask-composite: exclude;
     -webkit-mask-composite: destination-out;
     z-index: -1;
 }
@@ -951,7 +979,9 @@ h1 {
 
 .gradient-button:hover {
     background-color: #1a1a1a;
+    color: white;
 }
+
 /* button end */
 
 
@@ -1009,7 +1039,7 @@ h1 {
 
 
 /* 5-logos section start */
-.img-fluid-5-logos{
+.img-fluid-5-logos {
     height: 50px;
 }
 
@@ -1038,7 +1068,8 @@ h1 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 4px; /* Thickness at the top */
+    width: 4px;
+    /* Thickness at the top */
     height: 100%;
     background: #ccc;
     clip-path: polygon(50% 0%, 100% 100%, 0 100%);
@@ -1046,7 +1077,8 @@ h1 {
 
 .gradient-text {
     font-size: 20px;
-    background: linear-gradient(90deg, #c777c086, #8a2be2, #6c757d); /* Initial gradient */
+    background: linear-gradient(90deg, #c777c086, #8a2be2, #6c757d);
+    /* Initial gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -1054,10 +1086,12 @@ h1 {
 
 .scrolled-text {
     font-size: 20px;
-    background: linear-gradient(90deg, #ff6347, #ffa500); /* New gradient colors */
+    background: linear-gradient(90deg, #ff6347, #ffa500);
+    /* New gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent; /* For fallback */
+    color: transparent;
+    /* For fallback */
 }
 
 @media (max-width: 768px) {
@@ -1081,7 +1115,8 @@ h1 {
 /* home benefits-card section start */
 
 .benefit-card {
-    border: 1px solid transparent; /* Initially transparent border */
+    border: 1px solid transparent;
+    /* Initially transparent border */
     border-radius: 11px;
     background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
     background-clip: padding-box, border-box;
@@ -1091,15 +1126,20 @@ h1 {
     flex-direction: column;
     height: 300px;
     position: relative;
-    transition: background 0.3s ease, border 0.8s ease; /* Add transition for border */
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
 }
 
 /* Hover effect with darkened background image and visible border */
 .benefit-card:hover {
     background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
     background-size: cover;
-    background-blend-mode: multiply; /* Darkens the background image */
-    border: 1px solid #8a2be2; /* Border color on hover */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
 }
 
 
@@ -1131,12 +1171,12 @@ h1 {
     margin-left: 5px;
 }
 
-.benefit-card h1{
+.benefit-card h1 {
     color: white;
     font-size: 25px;
 }
 
-.benefit-card p{
+.benefit-card p {
     color: rgba(255, 255, 255, 0.61);
     font-size: 16px;
     padding-top: 12px;
@@ -1149,19 +1189,23 @@ h1 {
 /* stright line with text start */
 .gradient-line {
     width: 4px;
-    height: 80%; /* Adjusted height to fit within content */
+    height: 80%;
+    /* Adjusted height to fit within content */
     background: linear-gradient(to bottom, #009ca0, #6c757d);
     display: inline-block;
-  }
-  .content-wrapper {
+}
+
+.content-wrapper {
     display: flex;
     align-items: center;
-  }
-  .content-left, .content-right {
+}
+
+.content-left,
+.content-right {
     padding: 20px;
     flex: 1;
-  }
-  
+}
+
 /* stright line with text start */
 
 
@@ -1171,186 +1215,173 @@ h1 {
 /* logos section start */
 
 
-.company-logo-section{
+.company-logo-section {
     border: 1px solid #ffffff3d;
     margin: 20px;
     padding: 40px;
-    
+
 }
 
-.company-img-title{
+.company-img-title {
     color: white;
 }
-.company-logo-text{
+
+.company-logo-text {
     margin-top: 20px;
-color: rgba(255, 255, 255, 0.616);
+    color: rgba(255, 255, 255, 0.616);
 }
 
-.company-logo-title{
+.company-logo-title {
     color: white;
 }
 
 
 .company-logo-text .check-icon {
-    width: 16px; /* Adjust the size as needed */
-    margin-right: 8px; /* Adds space between icon and text */
-    vertical-align: middle; /* Aligns icon with text */
+    width: 16px;
+    /* Adjust the size as needed */
+    margin-right: 8px;
+    /* Adds space between icon and text */
+    vertical-align: middle;
+    /* Aligns icon with text */
 }
 
 .company-logo-text {
-    border-bottom: 1px solid #cccccc57; /* Adds the bottom line */
-    padding-bottom: 8px; /* Adds spacing above the line */
-    margin-bottom: 12px; /* Adds spacing below the line */
-    display: flex; /* Keeps the icon and text aligned */
-    align-items: center; /* Vertically centers the icon and text */
+    border-bottom: 1px solid #cccccc57;
+    /* Adds the bottom line */
+    padding-bottom: 8px;
+    /* Adds spacing above the line */
+    margin-bottom: 12px;
+    /* Adds spacing below the line */
+    display: flex;
+    /* Keeps the icon and text aligned */
+    align-items: center;
+    /* Vertically centers the icon and text */
 }
 
 .check-icon {
-    width: 16px; /* Adjust icon size as needed */
-    margin-right: 8px; /* Adds space between icon and text */
+    width: 16px;
+    /* Adjust icon size as needed */
+    margin-right: 8px;
+    /* Adds space between icon and text */
 }
 
 
 
 /* home second last cards section start */
 
-.home-second-last-cards-section {
-    border: 1px solid #ffffff3d;
-    margin: 20px;
-    background-color: #15131d;
-    padding: 60px 20px;
-}
 
-.home-second-last-cards-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.home-second-last-cards-section{
+border: 1px solid #ffffff3d;
+margin: 20px;
+background-color: #15131d;
+padding: 60px;
 }
-
-.custom-underline, .custom-underline-2 {
-    border-color: #ffffff;
+.home-second-last-cards-img{
+    height: 400px;
+    width: 500px;
+    padding-bottom: 20px;
+    
+    padding-right: 20px;
 }
-
-.second-last-second-text, .card-description {
-    color: #ffffff;
+.custom-underline{
+    color:white;
 }
+  .second-last-second-text{
+    color: rgb(255, 255, 255);
+  }
 
-.second-last-second-title, .card-title {
+  .second-last-second-title{
+    color: white;
+    font-size: 50px;
     color: #8a2be2;
-    font-size: 40px;
+  }
+
+
+
+
+  /* card-2 */
+  /* Card Styles */
+  .card-2 {
+    border: 1px solid rgba(255, 255, 255, 0.24); /* Border color */
+    background: #15131d; /* Card background color */
+    min-height: 700px; /* Minimum height */
+    border-radius: 30px; /* Rounded corners */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align children to the start */
+    align-items: flex-start; /* Align items to the start (left) */
+    padding: 20px; /* Padding for content */
+    position: relative; /* Position relative for absolute children */
+    
 }
 
 
-.card-2 {
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    background: #15131d;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    flex-grow: 1; /* Ensure cards grow equally */
-}
-
-
+/* First Card Background */
 .card-bg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../imges/img/AI0.png');
-    background-size: cover;
-    filter: blur(20px);
-    z-index: 1;
+    background-image: url('../imges/img/AI0.png'); /* Background image URL */
+    background-size:cover; /* Cover to fill the card */
+    filter: blur(35px); /* Adjust blur strength as needed */
+    z-index: 1; /* Make sure it's below content */
+    
+}
+.custom-underline-2{
+    color: #ffffff;
 }
 
+/* Content Wrapper for Card */
 .card-content {
-    position: relative;
-    z-index: 2;
+    position: relative; /* Relative positioning for the content */
+    z-index: 2; /* Make sure it's above the background */
+    color: rgb(95, 1, 1); /* Change text color if needed */
+    padding: 50px; /* Adjust padding as needed */
+    
 }
 
+
+/* Card Title */
+.card-title {
+    color: white;
+    font-size: 40px; /* Title font size */
+    text-align: left; /* Align title text to the left */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Card Description */
+.card-description {
+    color: rgb(255, 255, 255); /* White text */
+    margin-bottom: 10px; /* Space between descriptions */
+    text-align: justify;
+}
+
+/* Ensure checkmark images in the descriptions are properly styled */
 .check-image {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+    width: 16px; /* Set a fixed width for the checkmark image */
+    height: 16px; /* Set a fixed height for the checkmark image */
+    margin-right: 5px; /* Space between image and text */
+    vertical-align: middle; /* Align image vertically with text */
 }
 
+/* Icons Row */
 .icons-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    display: flex; /* Use flexbox to align icons in a row */
+    justify-content: space-evenly; /* Space out icons evenly */
+    margin-top: 20px; /* Space above the icons */
+    padding-left: 50px;
+    padding-bottom: 20px;
 }
 
+/* Icon Styles */
 .icon {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+    width: 60px; /* Set a fixed width for icons */
+    height: 60px; /* Set a fixed height for icons */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between icons */
 }
-
-
-
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .home-second-last-cards-section {
-        padding: 30px 10px; /* Reduce padding */
-        margin: 10px; /* Reduce margin */
-    }
-
-    .home-second-last-cards-img {
-        height: auto; /* Let the image adjust naturally */
-        width: 100%; /* Full width for smaller screens */
-        padding-bottom: 10px; /* Reduce padding */
-        padding-right: 0; /* Remove right padding */
-    }
-
-    .card-2 {
-        padding: 15px; /* Reduce padding inside cards */
-        border-radius: 15px; /* Smaller border radius */
-    }
-
-    .card-content {
-        padding: 20px; /* Adjust card content padding */
-    }
-
-    .second-last-second-title, .card-title {
-        font-size: 30px; /* Smaller font size */
-    }
-
-    .icons-row {
-        margin-top: 10px; /* Reduce margin for icons */
-    }
-
-    .gradient-button {
-        padding: 8px 15px; /* Smaller button padding */
-    }
-}
-
-@media (max-width: 576px) {
-    .home-second-last-cards-section {
-        padding: 20px 5px; /* Further reduce padding */
-        margin: 5px; /* Minimal margin */
-    }
-
-    .card-content {
-        padding: 10px; /* Smaller card content padding */
-    }
-
-    .second-last-second-title, .card-title {
-        font-size: 24px; /* Smaller font size for very small screens */
-    }
-
-    .icon {
-        width: 40px; /* Smaller icon size */
-        height: 40px;
-    }
-}
-
-
-
 /* home second last cards section end */
 
 /* home pricing section start */
@@ -1362,8 +1393,10 @@ color: rgba(255, 255, 255, 0.616);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
-    background: url('../imges/img/stars.svg') center/cover no-repeat; /* Cover image */
+    height: 100vh;
+    /* Full viewport height */
+    background: url('../imges/img/stars.svg') center/cover no-repeat;
+    /* Cover image */
     color: white;
     text-align: center;
     padding: 20px;
@@ -1371,18 +1404,20 @@ color: rgba(255, 255, 255, 0.616);
 
 /* Logo Styling */
 .home-pricing-section__logo {
-    width: 300px; /* Adjust logo size */
+    width: 300px;
+    /* Adjust logo size */
     margin-bottom: 20px;
 }
 
 /* Content Styling */
 .home-pricing-section__content {
-    max-width: 600px; /* Center and limit content width */
+    max-width: 600px;
+    /* Center and limit content width */
 }
 
 /* Paragraph Styling */
 .home-pricing-section__text {
-   margin-top: 30px;
+    margin-top: 30px;
     font-size: 15px;
     margin-bottom: 10px;
 }
@@ -1406,7 +1441,8 @@ color: rgba(255, 255, 255, 0.616);
 }
 
 .home-pricing-section__button:hover {
-    background-color: #006f72; /* Darken on hover */
+    background-color: #006f72;
+    /* Darken on hover */
 }
 
 
@@ -1423,7 +1459,8 @@ color: rgba(255, 255, 255, 0.616);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
 }
 
 /* Left Side Info */
@@ -1435,7 +1472,7 @@ color: rgba(255, 255, 255, 0.616);
 
 .pricing-subscription__title {
     font-size: 40px;
-    
+
     color: #8a2be2;
 }
 
@@ -1450,7 +1487,8 @@ color: rgba(255, 255, 255, 0.616);
     display: flex;
     gap: 30px;
     flex: 1;
-    flex-wrap: wrap; /* Wraps the cards on smaller screens */
+    flex-wrap: wrap;
+    /* Wraps the cards on smaller screens */
 }
 
 /* Enlarged Card Styling */
@@ -1460,11 +1498,14 @@ color: rgba(255, 255, 255, 0.616);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 100%;
-    max-width: 450px; /* Makes the card wider */
-    min-height: 400px; /* Adds a minimum height */
+    max-width: 450px;
+    /* Makes the card wider */
+    min-height: 400px;
+    /* Adds a minimum height */
     text-align: center;
     transition: transform 0.3s;
-    border: 1px solid #dddddd6b; /* Default border color */
+    border: 1px solid #dddddd6b;
+    /* Default border color */
 }
 
 .pricing-card:hover {
@@ -1519,12 +1560,15 @@ color: rgba(255, 255, 255, 0.616);
 
 .check-feature {
     position: relative;
-    padding-left: 30px; /* Adjust spacing to fit the icon */
+    padding-left: 30px;
+    /* Adjust spacing to fit the icon */
     line-height: 1.6;
-    background-image: url('../imges/icons/check.svg'); /* Path to check icon */
+    background-image: url('../imges/icons/check.svg');
+    /* Path to check icon */
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 20px 20px; /* Adjust size to match design */
+    background-size: 20px 20px;
+    /* Adjust size to match design */
 }
 
 /* Responsive Adjustments */
@@ -1535,22 +1579,22 @@ color: rgba(255, 255, 255, 0.616);
         margin-bottom: 20px;
         text-align: center;
     }
-    
+
     .pricing-subscription__cards {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .pricing-card {
         max-width: 100%;
         min-height: auto;
     }
-    
+
     .pricing-card__plan,
     .pricing-card__cost {
         text-align: center;
     }
-    
+
     .pricing-card__button {
         padding: 10px 60px;
     }
@@ -1568,11 +1612,11 @@ color: rgba(255, 255, 255, 0.616);
     .pricing-card__plan {
         font-size: 36px;
     }
-    
+
     .pricing-card__cost {
         font-size: 38px;
     }
-    
+
     .pricing-card__button {
         padding: 10px 50px;
     }
@@ -1582,15 +1626,15 @@ color: rgba(255, 255, 255, 0.616);
     .pricing-subscription__title {
         font-size: 24px;
     }
-    
+
     .pricing-card__plan {
         font-size: 30px;
     }
-    
+
     .pricing-card__cost {
         font-size: 32px;
     }
-    
+
     .pricing-card__button {
         width: 100%;
         padding: 10px 0;
@@ -1601,90 +1645,20 @@ color: rgba(255, 255, 255, 0.616);
 
 
 /* last card section start */
-.card-2 {
-    border: 1px solid rgba(255, 255, 255, 0.24);
-    background: #15131d;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    align-items: flex-start; /* Align content to the left */
-    padding: 20px;
-    position: relative;
-    min-height: 400px; /* Ensures consistent height */
+
+.home-last-section-cards-icon{
+    width: 500px;
+    height: 350px;
 }
 
-.home-last-section-cards-card-content {
-    z-index: 2;
-    text-align: left; /* Align text to the left */
-    color: white;
-    padding: 20px;
-    width: 100%; /* Ensure content spans the full width */
+.home-last-section-cards-card-title{
+    color: #8a2be2;
+    padding-top: 50px;
 }
 
-.home-last-section-cards-icon {
-    width: 300px; /* Increased size for a larger image */
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.home-last-section-cards-card-title {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-.home-last-section-cards-card-description {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .home-last-section-cards-card-title {
-        font-size: 28px; /* Adjust title size */
-    }
-
-    .home-last-section-cards-card-description {
-        font-size: 14px; /* Adjust description size */
-    }
-
-    .card-2 {
-        min-height: auto; /* Allow height to adjust */
-        padding: 15px; /* Reduce padding */
-    }
-
-    .gradient-button {
-        padding: 8px 15px; /* Adjust button padding */
-    }
-
-    .home-last-section-cards-icon {
-        width: 100px; /* Adjust image size */
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 576px) {
-    .home-last-section-cards-card-title {
-        font-size: 24px; /* Adjust title size */
-    }
-
-    .home-last-section-cards-card-description {
-        font-size: 12px; /* Adjust description size */
-    }
-
-    .card-2 {
-        padding: 10px; /* Further reduce padding */
-    }
-
-    .gradient-button {
-        padding: 6px 10px; /* Adjust button padding */
-    }
-
-    .home-last-section-cards-icon {
-        width: 80px; /* Further adjust image size */
-    }
+.home-last-section-cards-card-description{
+    color: #ffff;
+    padding-top: 10px;
 }
 
 
@@ -2114,6 +2088,7 @@ color: rgba(255, 255, 255, 0.616);
     flex-direction: column;
     min-height: 100vh;
 }
+
 .createmicro-content {
     flex: 1;
     display: flex;
@@ -2122,37 +2097,226 @@ color: rgba(255, 255, 255, 0.616);
     flex-direction: column;
     text-align: center;
 }
+
 .createmicro-hero {
 
-    bottom: 2rem; /* Adjust as needed */
+    bottom: 2rem;
+    /* Adjust as needed */
     width: 90%;
 }
+
 .createmicro-message {
     margin-top: 1rem;
-    color: #28a745; /* Bootstrap success color */
+    color: #28a745;
+    /* Bootstrap success color */
 }
 
 
-/* dashboard */
+/* User dashboard Start  */
 
 .dashboard-hero {
     color: #fff;
-    min-height: 100vh;
-    margin-top: 120px; /* Adjust according to navbar height */
+    /* min-height: 100vh;
+    margin-top: 120px; */
+    padding: 7rem 4rem;
+    /* Adjust according to navbar height */
 }
-.dashboard-section {
-    padding: 2rem;
-    border: 1px solid #dee2e6;
-    border-radius: .375rem;
-    margin-bottom: 1rem;
-}
+
 .dashboard-project-card {
     padding: 1rem;
     border: 1px solid #dee2e6;
     border-radius: .375rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-/* Dashboard end */
+
+.user-dashboard-btn {
+    border: 2px solid transparent;
+    background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
+        linear-gradient(to right, #8a2be2, #6962aa65, #40e0d0, #8a2be2) border-box;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.user-dashboard-btn:hover {
+    color: #8a2be2;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.user-dashboard-card {
+    border: 1px solid transparent;
+    border-radius: .375rem;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    transition: background 0.3s ease;
+    min-height: 11rem;
+}
+
+.user-dashboard-card:hover {
+    background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+}
+
+
+/* User Dashboard Datatable CSS  */
+/* Dark mode styling */
+#dataTable_wrapper {
+    color: white;
+    background-color: #2c2f33;
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+
+#dataTable thead {
+    background-color: #23272a;
+    color: white;
+}
+
+.dataTables_length label {
+    color: white;
+}
+
+#dataTable tbody tr {
+    background-color: #2c2f33;
+    color: white;
+}
+
+/* #dataTable tbody tr:hover {
+    background-color: #3c4045;
+} */
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: white !important;
+    background-color: #2c2f33;
+}
+
+option {
+    background-color: #2c2f33;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    background-color: #3c4045;
+}
+
+.dataTables_filter input {
+    background-color: #23272a;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dataTables_length select,
+.dataTables_filter label,
+.dataTables_info {
+    color: white;
+}
+
+/* Set dark color for active pagination button */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #343a40;
+    /* Dark background */
+    color: white;
+    /* White text */
+    border: none;
+}
+
+/* Optional: Add a hover effect for pagination buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #3c4045;
+    /* Slightly lighter dark background */
+    color: white;
+}
+
+.table-responsive {
+    /* overflow-x: scroll; */
+    transform: rotateX(180deg);
+}
+
+.inner-div {
+    transform: rotateX(180deg);
+}
+
+@media screen and (max-width:575px) {
+
+    .dashboard-hero {
+        padding: 0rem 2rem;
+    }
+
+    .user-dashboard-card h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .user-dashboard-card p {
+        font-size: 0.8rem;
+    }
+
+    .user-dashboard-card h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .user-dashboard-btn {
+        padding: 0.4rem !important;
+        font-size: 9px;
+    }
+
+    .table-header {
+        padding: 0rem;
+    }
+
+    .table-btn-div {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width:575px) and (max-width:768px) {
+    .dashboard-hero {
+        padding: 0rem 2rem;
+    }
+
+    .table-btn-div {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    .user-dashboard-btn {
+        font-size: 13px;
+        padding: 0.6rem !important;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    .dashboard-hero {
+        padding: 0rem 2rem;
+    }
+
+    .user-dashboard-btn {
+        font-size: 11px;
+        padding: 10px !important;
+    }
+
+    .user-dashboard-card h1 {
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .user-dashboard-card p {
+        font-size: 1rem;
+    }
+}
+
+/* User dashboard end */
 
 .gradient-btn-sunset {
     border: 2px solid transparent;
@@ -2170,6 +2334,7 @@ color: rgba(255, 255, 255, 0.616);
         linear-gradient(to right, #ff7e5f, #feb47b) border-box;
     color: #c77d00;
 }
+
 .gradient-btn-forest {
     border: 2px solid transparent;
     background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
@@ -2203,6 +2368,7 @@ color: rgba(255, 255, 255, 0.616);
         linear-gradient(to right, #ff4d4d, #ff9999) border-box;
     color: #780000;
 }
+
 .gradient-btn-cherry {
     border: 2px solid transparent;
     background: linear-gradient(#1a1a2e, #1a1a2e) padding-box,
@@ -2222,12 +2388,41 @@ color: rgba(255, 255, 255, 0.616);
 
 /* Edit Microservice Start */
 
-.edit-header, .edit-footer { background: #333; color: white; }
-.edit-container { margin-top: 100px; 
-color: white;
- }
-.edit-class { border: 1px solid #ccc; border-radius: 5px; padding: 20px;margin: 20px; }
-.edit-button { background-color: #007bff; color: white; }
+.edit-header,
+.edit-footer {
+    background: #333;
+    color: white;
+}
+
+.edit-container {
+    margin-top: 100px;
+    color: white;
+}
+
+.edit-class {
+    border-radius: 5px;
+
+
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+}
+
+
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
 /* Edit end */
 
 
@@ -2237,209 +2432,565 @@ color: white;
     margin-top: 120px;
     color: white;
 }
+
 .project-microservice-card {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #dee2e6;
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    /* border-radius: 11px; */
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+
+    /* border: 1px solid #dee2e6; */
     border-radius: .375rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
 }
+
 .project-button {
     margin-right: 10px;
 }
+
 .project-assembly-section {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 
     border: 1px solid #dee2e6;
     border-radius: .375rem;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .project-microservice-card {
+        margin: 10px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-microservice-card {
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
 /* Project Dashboard end */
-/* Project Dashboard end */
+
+
 /* complete start */
-.completemicro-container { padding: 24px; 
+.completemicro-container {
+    padding: 24px;
     margin-top: 110px;
 }
 
 
 
-        .completemicro-status { margin-bottom: 16px; padding: 16px; border-radius: 4px; }
-        .completemicro-button { padding: 8px 16px; border-radius: 4px; }
-        .completemicro-success { background-color: #d1e7dd; color: #0f5132; }
-        .completemicro-failure { background-color: #f8d7da; color: #842029; }
+.completemicro-status {
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.completemicro-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.completemicro-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.completemicro-failure {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
 /* complete end */
 
 /* About start */
 
-.about{
-    padding: 24px; 
-min-height: 100vh;
+.about {
+    padding: 24px;
+    min-height: 100vh;
     margin-top: 110px;
 }
+
 .right-bracket {
-   
+
     background: linear-gradient(45deg, #407beb, #ff66b2, #800080, #b19cd9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: lighter;
 
 }
-.left-bracket
-{background: linear-gradient(45deg, #ffff00, #e3e300, #66ff66, #009900);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-weight: lighter;
+
+.left-bracket {
+    background: linear-gradient(45deg, #ffff00, #e3e300, #66ff66, #009900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
 
 }
-.about-hero{
+
+.about-hero {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
 }
-.about-hero-smhead{
+
+.about-hero-smhead {
     font-size: 14px;
 }
-.about-owned{
+
+.about-owned {
     font-weight: lighter;
     /* font-size: 16px; */
     color: rgba(196, 193, 193, 0.74);
 }
-.about h1{
+
+.about h1 {
     color: #FFF;
-    
-    font-size:3rem;
+
+    font-size: 3rem;
 }
+
 .about-hero p {
     font-size: 15px;
-   
+
 }
+
 .about-gradient-background {
- 
+
     top: 0;
     width: 100%;
-    height: 100%; /* Ensures it covers the parent */
+    height: 100%;
+    /* Ensures it covers the parent */
     background: radial-gradient(circle, rgba(52, 25, 71, 1) 0%, rgba(40, 32, 108, 0) 70%);
-    pointer-events: none; /* Disables pointer events */
+    pointer-events: none;
+    /* Disables pointer events */
 }
-.about-opensource{
+
+.about-opensource {
     color: white;
     padding: 20px 100px;
 }
-.about-opensource h3{
+
+.about-opensource h3 {
     color: white;
-    font-size:3rem;
+    font-size: 3rem;
 }
-.about-opensource p{
+
+.about-opensource p {
     padding: 0 120px;
     font-size: 1.25rem;
     text-align: center;
-font-weight: lighter;
+    font-weight: lighter;
 }
 
-.about-mit{
+.about-mit {
     border-radius: 10px;
     margin: 0 250px;
 }
-.about-mit p{
+
+.about-mit p {
     font-size: 1rem;
-text-align: justify;
+    text-align: justify;
 
 }
-.about-impressum h3{
-font-size: 1.5rem;
+
+.about-impressum h3 {
+    font-size: 1.5rem;
+}
+.Impressum-about-logo{
+    width: 10rem;
+    height: 4rem;
 }
 
- a{
-color: purple;
+a {
+    color: purple;
 
 }
 
 
 @media (min-width: 768px) and (max-width: 992px) {
-       
-    .about-opensource{
-        
-        padding: 20px ;
+
+    .about-opensource {
+
+        padding: 20px;
     }
-  
-    .about-opensource p{
+
+    .about-opensource p {
         padding: 0 40px;
-       
+
     }
-    
+
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-    
-    .about h1{
-        font-size:2rem;
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .about h1 {
+        font-size: 2rem;
     }
-    .about-opensource{
-        
+
+    .about-opensource {
+
         padding: 0px !important;
     }
-  
-    .about-opensource p{
-        padding: 0px !important ;
-       
+
+    .about-opensource p {
+        padding: 0px !important;
+
     }
-    .about-opensource h3{
-        font-size:1.5rem;
+
+    .about-opensource h3 {
+        font-size: 1.5rem;
     }
-    .about-opensource p{
+
+    .about-opensource p {
         padding: 0 120px;
         font-size: 1.25rem;
         text-align: center;
-    font-weight: lighter;
+        font-weight: lighter;
     }
-          
+    .Impressum-about-content{
+        text-align: center;
     }
 
-    /* About end */
-     /* consulting start */
-     .consulting{
-        padding: 24px; 
+}
+
+/* About end */
+/* consulting start */
+.consulting {
+    padding: 24px;
     min-height: 100vh;
-        margin-top: 110px;
-        color: #ffff;
-        position: relative;
+    margin-top: 110px;
+    color: #ffff;
+    position: relative;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+
+
+.documentation-rounded-div {
+    position: relative;
+    /* height: 100vh; Set height relative to viewport height */
+    width: 70vw;
+    /* Use a wider width for smaller screens */
+    max-width: 1200px;
+    /* Limit max width for large screens */
+    margin: 0 auto;
+    /* Centers the div */
+    border-radius: 20px;
+    /* Adjusts the roundness */
+    overflow: hidden;
+    /* Ensures children don’t overflow */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Optional shadow effect */
+}
+
+.documentation-rounded-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../imges/img/concept.jpg') no-repeat right / cover;
+    /* Background image */
+    filter: blur(8px);
+    /* Adjust blur level */
+    z-index: 0;
+    /* Places it behind the content */
+}
+
+.documentation-rounded-div h2,
+/* .documentation-rounded-div h5,  */
+.documentation-rounded-div p {
+    position: relative;
+    /* Ensures text is above the background */
+    color: white;
+    /* Change text color for visibility */
+    z-index: 1;
+    /* Places text above the blurred background */
+    /* text-align: center; Center text for better appearance */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .documentation-rounded-div {
+        /* height: 70vh;  */
+        width: 95vw;
+        /* Increase width for tablets */
     }
-    .justify{
-        text-align: justify;
+
+    .documentation-rounded-div h2 {
+        font-size: 2em;
+        /* Responsive heading size */
     }
 
-  
-      
-      .consulting-background-image {
-        background-image: url('../imges/img/codeface.p'); /* Replace with your image path */
-        background-size: cover;
-        background-position: center;
-        height: 100%;
-        /* filter: blur(8px); This blurs the image */
-        /* position: absolute; */
-        width: 100%;
-        z-index: 1;
-      }
-      /* consulting end  */
-      /* Document start */
-      #documentation {
+    .documentation-rounded-div h4,
+    .documentation-rounded-div p {
+        font-size: 1.2em;
+        /* Responsive paragraph size */
+    }
+}
 
-        padding: 24px; 
-        min-height: 100vh;
-            margin-top: 110px;
-            color: #ffff;
-        }
+@media (max-width: 480px) {
+    /* .documentation-rounded-div {
+        height: 60vh; 
+    } */
 
-        /* Documentation end  */
+    .documentation-rounded-div h2 {
+        font-size: 1.8em;
+        /* Smaller heading size for mobile */
+    }
 
-        /* get-started start */
+    .documentation-rounded-div h4,
+    .documentation-rounded-div p {
+        font-size: 1em;
+        /* Smaller paragraph size for mobile */
+    }
+}
 
-        #get-started{
-            padding: 24px; 
-            min-height: 100vh;
-                margin-top: 110px;
-                color: #ffff;
-                
-        }
+/* Documentation end  */
+
+.consulting-background-image {
+    background-image: url('../imges/img/codeface.ng');
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* filter: blur(1px);  */
+    /* position: absolute; */
+    width: 100%;
+    z-index: 1;
+}
+
+/* consulting end  */
+/* Document start */
+#documentation {
+
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 110px;
+    color: #ffff;
+}
+
+/* Documentation end  */
+
+/* get-started start */
+
+#get-started {
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 110px;
+    color: #ffff;
+
+}
+
+#get-started {
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 110px;
+    color: #ffff;
+
+}
+
+.get-main-section {
+    border: 1px solid gray;
+    /* Specify width, style, and color */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 40px 0px;
+}
+
+
+.get-benefit-card-1 {
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
+}
+
+
+.get-benefit-card-1:hover {
+    background-image: url('../imges/img/CacheMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
+}
+
+.get-benefit-card-2 {
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
+}
+
+
+.get-benefit-card-2:hover {
+    background-image: url('../imges/img/NotificationMicroservice 0.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
+}
+
+.get-benefit-card-3 {
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
+}
+
+
+.get-benefit-card-3:hover {
+    background-image: url('../imges/img/LoggingMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
+}
+
+.get-benefit-card-4 {
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    border-radius: 11px;
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    transition: background 0.3s ease, border 0.8s ease;
+    /* Add transition for border */
+}
+
+
+.get-benefit-card-4:hover {
+    background-image: url('../imges/img/SecurityMicroservice.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.815));
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* Darkens the background image */
+    border: 1px solid #8a2be2;
+    /* Border color on hover */
+}
+
+.get-benefit-card h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.get-benefit-card p {
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 16px;
+    padding-top: 12px;
+}
+
+.get-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: auto;
+    background-color: transparent;
+}
+
+.get-explore-more {
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    color: #8a2be2;
+}
+
+@media (max-width: 768px) {
+
+    .get-benefit-card-1,
+    .get-benefit-card-2,
+    .get-benefit-card-3,
+    .get-benefit-card-4 {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .get-benefit-card-1,
+    .get-benefit-card-2,
+    .get-benefit-card-3,
+    .get-benefit-card-4 {
+        height: auto;
+    }
+}
+
+/* get Started end */
+/*Pricing start  */
+
+#pricing {
+    padding: 24px;
+    min-height: 100vh;
+    margin-top: 110px;
+    color: #ffff;
+
+}
+
+
+/* home pricing section start */
+
+/* Section with Cover Background */
+.pricing-hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; Full viewport height */
+    background: url('../imges/img/stars.svg');
+    /* Cover image */
+    background-size: contain;
+    color: white;
+    text-align: center;
+    padding: 20px;
+} 
