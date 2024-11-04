@@ -1269,119 +1269,187 @@ h1 {
 
 /* home second last cards section start */
 
-
-.home-second-last-cards-section{
-border: 1px solid #ffffff3d;
-margin: 20px;
-background-color: #15131d;
-padding: 60px;
+/* General styles */
+/* General Section Styles */
+.home-second-last-cards-section {
+    border: 1px solid #ffffff3d;
+    margin: 20px;
+    background-color: #15131d;
+    padding: 60px;
 }
-.home-second-last-cards-img{
+
+.home-second-last-cards-img {
     height: 400px;
     width: 500px;
     padding-bottom: 20px;
-    
     padding-right: 20px;
 }
-.custom-underline{
-    color:white;
-}
-  .second-last-second-text{
-    color: rgb(255, 255, 255);
-  }
 
-  .second-last-second-title{
+.custom-underline, .custom-underline-2 {
     color: white;
-    font-size: 50px;
-    color: #8a2be2;
-  }
-
-
-
-
-  /* card-2 */
-  /* Card Styles */
-  .card-2 {
-    border: 1px solid rgba(255, 255, 255, 0.24); /* Border color */
-    background: #15131d; /* Card background color */
-    min-height: 700px; /* Minimum height */
-    border-radius: 30px; /* Rounded corners */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: flex-start; /* Align children to the start */
-    align-items: flex-start; /* Align items to the start (left) */
-    padding: 20px; /* Padding for content */
-    position: relative; /* Position relative for absolute children */
-    
 }
 
+.second-last-second-text {
+    color: rgb(255, 255, 255);
+}
 
-/* First Card Background */
+.second-last-second-title {
+    color: #8a2be2;
+    font-size: 50px;
+}
+
+/* Card Styles */
+.card-2 {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: #15131d;
+    min-height: 700px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+/* Card Background */
 .card-bg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../imges/img/AI0.png'); /* Background image URL */
-    background-size:cover; /* Cover to fill the card */
-    filter: blur(35px); /* Adjust blur strength as needed */
-    z-index: 1; /* Make sure it's below content */
-    
-}
-.custom-underline-2{
-    color: #ffffff;
+    background-image: url('../imges/img/AI0.png');
+    background-size: cover;
+    filter: blur(35px);
+    z-index: 1;
 }
 
 /* Content Wrapper for Card */
 .card-content {
-    position: relative; /* Relative positioning for the content */
-    z-index: 2; /* Make sure it's above the background */
-    color: rgb(95, 1, 1); /* Change text color if needed */
-    padding: 50px; /* Adjust padding as needed */
-    
+    position: relative;
+    z-index: 2;
+    color: rgb(95, 1, 1);
+    padding: 50px;
 }
-
 
 /* Card Title */
 .card-title {
     color: white;
-    font-size: 40px; /* Title font size */
-    text-align: left; /* Align title text to the left */
-    margin-bottom: 10px; /* Space below the title */
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 /* Card Description */
 .card-description {
-    color: rgb(255, 255, 255); /* White text */
-    margin-bottom: 10px; /* Space between descriptions */
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
     text-align: justify;
 }
 
-/* Ensure checkmark images in the descriptions are properly styled */
 .check-image {
-    width: 16px; /* Set a fixed width for the checkmark image */
-    height: 16px; /* Set a fixed height for the checkmark image */
-    margin-right: 5px; /* Space between image and text */
-    vertical-align: middle; /* Align image vertically with text */
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
-/* Icons Row */
 .icons-row {
-    display: flex; /* Use flexbox to align icons in a row */
-    justify-content: space-evenly; /* Space out icons evenly */
-    margin-top: 20px; /* Space above the icons */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
     padding-left: 50px;
     padding-bottom: 20px;
 }
 
-/* Icon Styles */
 .icon {
-    width: 60px; /* Set a fixed width for icons */
-    height: 60px; /* Set a fixed height for icons */
-    object-fit: contain; /* Maintain aspect ratio */
-    margin-left: 10px; /* Space between icons */
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 10px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-second-last-cards-img {
+        height: 300px;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .second-last-second-title {
+        font-size: 30px;
+    }
+
+    .card-2 {
+        min-height: 500px;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 28px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .icons-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .second-last-second-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .home-second-last-cards-section {
+        padding: 30px 15px;
+    }
+
+    .home-second-last-cards-img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .card-content {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .icons-row {
+        justify-content: center;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
 /* home second last cards section end */
 
 /* home pricing section start */
