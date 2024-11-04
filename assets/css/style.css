@@ -44,9 +44,23 @@ body {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
 }
-.lite-purple{
+
+.pricing-link.active,
+.home-link.active,
+.features-link.active,
+.documatation-link.active,
+.getstarted-link.active,
+.consulting-link.active,
+.about-link.active,
+.reg-link.active {
+    color: #8a2be2 !important;
+    border-bottom: 1px solid #8a2be2;
+}
+
+.lite-purple {
     color: #6b21a8;
 }
+
 .login-btn {
     background: linear-gradient(to right, #a855f7, #6b21a8);
     border: none;
@@ -945,7 +959,7 @@ h1 {
 .gradient-button::before {
     content: '';
     position: absolute;
-    
+
     top: 0;
     left: 0;
     right: 0;
@@ -2346,29 +2360,41 @@ option {
 
 /* Edit Microservice Start */
 
-.edit-header, .edit-footer { background: #333; color: white; }
-.edit-container { margin-top: 100px; 
-color: white;
- }
+.edit-header,
+.edit-footer {
+    background: #333;
+    color: white;
+}
+
+.edit-container {
+    margin-top: 100px;
+    color: white;
+}
+
 .edit-class {
     border-radius: 5px;
-     
-    
-     margin: 20px;
+
+
+    margin: 20px;
     padding: 20px;
-    border: 1px solid transparent; /* Initially transparent border */
-background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
-background-clip: padding-box, border-box;
-padding: 20px;
-box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     position: relative;
     transition: background 0.3s ease, border 0.8s ease;
 }
-    
-    
 
-.edit-button { background-color: #007bff; color: white; }
+
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
 /* Edit end */
 
 
@@ -2382,13 +2408,14 @@ box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
 .project-microservice-card {
     margin: 20px;
     padding: 20px;
-    border: 1px solid transparent; /* Initially transparent border */
-/* border-radius: 11px; */
-background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
-background-clip: padding-box, border-box;
-padding: 20px;
-box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
-    
+    border: 1px solid transparent;
+    /* Initially transparent border */
+    /* border-radius: 11px; */
+    background: linear-gradient(#0e0c14, #0e0c14), linear-gradient(to right, #8a2be2, #9c2278, #8a2be2);
+    background-clip: padding-box, border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
+
     /* border: 1px solid #dee2e6; */
     border-radius: .375rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -2422,6 +2449,7 @@ box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
         padding: 10px;
     }
 }
+
 /* Project Dashboard end */
 
 
@@ -2551,6 +2579,10 @@ box-shadow: 0 4px 10px rgba(79, 0, 153, 0.432);
 .about-impressum h3 {
     font-size: 1.5rem;
 }
+.Impressum-about-logo{
+    width: 10rem;
+    height: 4rem;
+}
 
 a {
     color: purple;
@@ -2572,7 +2604,7 @@ a {
 
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     .about h1 {
         font-size: 2rem;
@@ -2597,6 +2629,9 @@ a {
         font-size: 1.25rem;
         text-align: center;
         font-weight: lighter;
+    }
+    .Impressum-about-content{
+        text-align: center;
     }
 
 }
