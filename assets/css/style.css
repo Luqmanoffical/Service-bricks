@@ -956,11 +956,62 @@ h1 {
 
 
 
+.vh-100 {
+    height: 100vh; /* Full height for the hero section */
+  }
+  
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 0 15px; /* Responsive padding */
+    max-width: 50%; /* Adjust max-width */
+  }
+  
+  .hero-span {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #8a2be2, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media (max-width: 768px) {
+    .text-container {
+      max-width: 90%; /* Reduce max-width for smaller screens */
+      text-align: center; /* Center text on smaller devices */
+    }
+  
+    .gradient-text {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+
+    .text-container h1{
+        font-size: 1.5rem;
+    }
+    .hero-span {
+      
+      text-align: left; /* Further reduce font size for extra small devices */
+    }
+    
+    p {
+      font-size: 1rem;
+      text-align: justify; /* Adjust paragraph font size */
+    }
+  }
+  
+
+
+
 /* 5-logos section start */
 .img-fluid-5-logos{
     height: 50px;
 }
-
 
 
 
@@ -974,9 +1025,10 @@ h1 {
 
 .divider {
     position: relative;
-    width: 2px;
+    width: 2px; /* Vertical divider width */
     height: 100%;
-    min-height: 200px;
+    min-height: 200px; /* Ensure it has a minimum height */
+    margin: 0 auto; /* Center divider */
 }
 
 .divider::before {
@@ -1008,6 +1060,21 @@ h1 {
     color: transparent; /* For fallback */
 }
 
+@media (max-width: 768px) {
+    .divider {
+        width: 100%; /* Full width for horizontal divider */
+        height: 2px; /* Height for horizontal divider */
+        min-height: auto; /* Remove minimum height for horizontal */
+    }
+
+    .divider::before {
+        width: 100%; /* Full width for horizontal divider */
+        height: 4px; /* Thickness for horizontal divider */
+        top: 50%; /* Center vertically */
+        left: 0; /* Align to left */
+        transform: none; /* No need for transform */
+    }
+}
 
 
 
@@ -1147,119 +1214,143 @@ color: rgba(255, 255, 255, 0.616);
 
 /* home second last cards section start */
 
+.home-second-last-cards-section {
+    border: 1px solid #ffffff3d;
+    margin: 20px;
+    background-color: #15131d;
+    padding: 60px 20px;
+}
 
-.home-second-last-cards-section{
-border: 1px solid #ffffff3d;
-margin: 20px;
-background-color: #15131d;
-padding: 60px;
+.home-second-last-cards-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
-.home-second-last-cards-img{
-    height: 400px;
-    width: 500px;
-    padding-bottom: 20px;
-    
-    padding-right: 20px;
-}
-.custom-underline{
-    color:white;
-}
-  .second-last-second-text{
-    color: rgb(255, 255, 255);
-  }
 
-  .second-last-second-title{
-    color: white;
-    font-size: 50px;
+.custom-underline, .custom-underline-2 {
+    border-color: #ffffff;
+}
+
+.second-last-second-text, .card-description {
+    color: #ffffff;
+}
+
+.second-last-second-title, .card-title {
     color: #8a2be2;
-  }
-
-
-
-
-  /* card-2 */
-  /* Card Styles */
-  .card-2 {
-    border: 1px solid rgba(255, 255, 255, 0.24); /* Border color */
-    background: #15131d; /* Card background color */
-    min-height: 700px; /* Minimum height */
-    border-radius: 30px; /* Rounded corners */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: flex-start; /* Align children to the start */
-    align-items: flex-start; /* Align items to the start (left) */
-    padding: 20px; /* Padding for content */
-    position: relative; /* Position relative for absolute children */
-    
+    font-size: 40px;
 }
 
 
-/* First Card Background */
+.card-2 {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: #15131d;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1; /* Ensure cards grow equally */
+}
+
+
 .card-bg {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../imges/img/AI0.png'); /* Background image URL */
-    background-size:cover; /* Cover to fill the card */
-    filter: blur(35px); /* Adjust blur strength as needed */
-    z-index: 1; /* Make sure it's below content */
-    
-}
-.custom-underline-2{
-    color: #ffffff;
+    background-image: url('../imges/img/AI0.png');
+    background-size: cover;
+    filter: blur(20px);
+    z-index: 1;
 }
 
-/* Content Wrapper for Card */
 .card-content {
-    position: relative; /* Relative positioning for the content */
-    z-index: 2; /* Make sure it's above the background */
-    color: rgb(95, 1, 1); /* Change text color if needed */
-    padding: 50px; /* Adjust padding as needed */
-    
+    position: relative;
+    z-index: 2;
 }
 
-
-/* Card Title */
-.card-title {
-    color: white;
-    font-size: 40px; /* Title font size */
-    text-align: left; /* Align title text to the left */
-    margin-bottom: 10px; /* Space below the title */
-}
-
-/* Card Description */
-.card-description {
-    color: rgb(255, 255, 255); /* White text */
-    margin-bottom: 10px; /* Space between descriptions */
-    text-align: justify;
-}
-
-/* Ensure checkmark images in the descriptions are properly styled */
 .check-image {
-    width: 16px; /* Set a fixed width for the checkmark image */
-    height: 16px; /* Set a fixed height for the checkmark image */
-    margin-right: 5px; /* Space between image and text */
-    vertical-align: middle; /* Align image vertically with text */
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
 }
 
-/* Icons Row */
 .icons-row {
-    display: flex; /* Use flexbox to align icons in a row */
-    justify-content: space-evenly; /* Space out icons evenly */
-    margin-top: 20px; /* Space above the icons */
-    padding-left: 50px;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-/* Icon Styles */
 .icon {
-    width: 60px; /* Set a fixed width for icons */
-    height: 60px; /* Set a fixed height for icons */
-    object-fit: contain; /* Maintain aspect ratio */
-    margin-left: 10px; /* Space between icons */
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-second-last-cards-section {
+        padding: 30px 10px; /* Reduce padding */
+        margin: 10px; /* Reduce margin */
+    }
+
+    .home-second-last-cards-img {
+        height: auto; /* Let the image adjust naturally */
+        width: 100%; /* Full width for smaller screens */
+        padding-bottom: 10px; /* Reduce padding */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .card-2 {
+        padding: 15px; /* Reduce padding inside cards */
+        border-radius: 15px; /* Smaller border radius */
+    }
+
+    .card-content {
+        padding: 20px; /* Adjust card content padding */
+    }
+
+    .second-last-second-title, .card-title {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    .icons-row {
+        margin-top: 10px; /* Reduce margin for icons */
+    }
+
+    .gradient-button {
+        padding: 8px 15px; /* Smaller button padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .home-second-last-cards-section {
+        padding: 20px 5px; /* Further reduce padding */
+        margin: 5px; /* Minimal margin */
+    }
+
+    .card-content {
+        padding: 10px; /* Smaller card content padding */
+    }
+
+    .second-last-second-title, .card-title {
+        font-size: 24px; /* Smaller font size for very small screens */
+    }
+
+    .icon {
+        width: 40px; /* Smaller icon size */
+        height: 40px;
+    }
+}
+
+
+
 /* home second last cards section end */
 
 /* home pricing section start */
@@ -1510,20 +1601,90 @@ padding: 60px;
 
 
 /* last card section start */
-
-.home-last-section-cards-icon{
-    width: 500px;
-    height: 350px;
+.card-2 {
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: #15131d;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    padding: 20px;
+    position: relative;
+    min-height: 400px; /* Ensures consistent height */
 }
 
-.home-last-section-cards-card-title{
-    color: #8a2be2;
-    padding-top: 50px;
+.home-last-section-cards-card-content {
+    z-index: 2;
+    text-align: left; /* Align text to the left */
+    color: white;
+    padding: 20px;
+    width: 100%; /* Ensure content spans the full width */
 }
 
-.home-last-section-cards-card-description{
-    color: #ffff;
-    padding-top: 10px;
+.home-last-section-cards-icon {
+    width: 300px; /* Increased size for a larger image */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.home-last-section-cards-card-title {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.home-last-section-cards-card-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-last-section-cards-card-title {
+        font-size: 28px; /* Adjust title size */
+    }
+
+    .home-last-section-cards-card-description {
+        font-size: 14px; /* Adjust description size */
+    }
+
+    .card-2 {
+        min-height: auto; /* Allow height to adjust */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .gradient-button {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+
+    .home-last-section-cards-icon {
+        width: 100px; /* Adjust image size */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-last-section-cards-card-title {
+        font-size: 24px; /* Adjust title size */
+    }
+
+    .home-last-section-cards-card-description {
+        font-size: 12px; /* Adjust description size */
+    }
+
+    .card-2 {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .gradient-button {
+        padding: 6px 10px; /* Adjust button padding */
+    }
+
+    .home-last-section-cards-icon {
+        width: 80px; /* Further adjust image size */
+    }
 }
 
 
