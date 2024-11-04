@@ -108,32 +108,28 @@
 
   <!-- home-page-start -->
   <section>
-    <div style="position: relative; background: url('./assets/imges/img/herosection.png') center center / cover no-repeat; height: 100vh;">
+    <div class="position-relative bg-cover bg-center vh-100" style="background: url('./assets/imges/img/herosection.png') center center / cover no-repeat;">
       <!-- Text Container -->
-      <div style="position: absolute; top: 60%; left: 10%; transform: translateY(-50%); color: white; text-align: left; max-width: 50%;">
-        <h1 style="font-size: 37px;font-weight: lighter;">Unleash the Power of Microservices<br/><span style="
-            font-size: 45px;
-            font-weight: bold;
-            background: linear-gradient(90deg, #8a2be2, #feb47b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          ">
-            with ServiceBricksCurve
-          </span></h1>
-        <p style="font-size: 1.2rem; margin-top: 1rem; text-align: justify;">ServiceBricks is your cornerstone for building a robust microservices foundation. It is a powerful open-source platform designed to streamline the development, deployment, and maintenance of distributed systems.</p>
-        <button class="gradient-button">Get started</button>
+      <div class="text-container mt-5">
+        <h1 class=" display-5 text-white">
+          Unleash the Power of Microservices with<br/>
+          <span class="hero-span">
+             ServiceBricks
+          </span>
+        </h1>
+        <p class="fs-5 mt-3 text-justify text-white">
+          ServiceBricks is your cornerstone for building a robust microservices foundation. It is a powerful open-source platform designed to streamline the development, deployment, and maintenance of distributed systems.
+        </p>
+        <button class="btn gradient-button mt-3">Get started</button>
       </div>
-      
     </div>
-    
   </section>
   
 
   <!-- home-page-end -->
 
 <!-- 5 logos section start -->
-
-<section class="py-5">
+<section class="py-5 d-none d-md-block">
     <div class="container">
       <div class="row justify-content-center">
         <!-- Logo 1 -->
@@ -158,29 +154,31 @@
         </div>
       </div>
     </div>
-  </section>
+</section>
+
 
   <!-- 5 logos section end -->
 
   <!--  -->
-
-  <section class="py-5">
-    <div class="container content-wrapper d-flex align-items-center">
-        <!-- Left Content -->
-        <div class="content-left text-left">
-            <p class="gradient-text">
-                ServiceBricks is a fully open-source platform, designed to empower developers and businesses by providing all the tools needed to build microservices with ease. It is completely free to use, whether for personal projects, educational purposes, or full-scale commercial applications.
-            </p>
-        </div>
-        
-        <!-- Divider Line -->
-        <div class="divider mx-4"></div>
-        
-        <!-- Right Content -->
-        <div class="content-right text-left">
-            <p  style="font-size: 18px ; color: rgba(255, 255, 255, 0.596);">Licensed under the MIT license, ServiceBricks offers the flexibility and freedom for customization and integration within your own tech stack. Our commitment to open-source principles ensures transparency, accessibility, and a collaborative approach to continuous improvement.</p>
-        </div>
+<section class="py-5">
+  <div class="container content-wrapper d-flex flex-column flex-md-row align-items-center">
+    <!-- Left Content -->
+    <div class="content-left text-left col-md-5 mb-4 mb-md-0">
+      <p class="gradient-text" style="font-size: 1rem;">
+        ServiceBricks is a fully open-source platform, designed to empower developers and businesses by providing all the tools needed to build microservices with ease. It is completely free to use, whether for personal projects, educational purposes, or full-scale commercial applications.
+      </p>
     </div>
+
+    <!-- Divider Line -->
+    <div class="divider mx-auto mx-md-4" style="width: 1px; height: 100px; background-color: rgba(255, 255, 255, 0.3);"></div>
+
+    <!-- Right Content -->
+    <div class="content-right text-left col-md-5">
+      <p style="font-size: 18px; color: rgba(255, 255, 255, 0.7);">
+        Licensed under the MIT license, ServiceBricks offers the flexibility and freedom for customization and integration within your own tech stack. Our commitment to open-source principles ensures transparency, accessibility, and a collaborative approach to continuous improvement.
+      </p>
+    </div>
+  </div>
 </section>
 
 
@@ -199,7 +197,7 @@
                 <h1 class="mt-3">REST API Services</h1>
                 <p>Templated, repository-based services for quickly exposing standard CRUD methods or custom methods.</p>
                 <div class="card-footer">
-                    <img src="./assets/imges/icons/discord.png" alt="Icon" class="feature-benefit-icons">
+                    <img src="./assets/imges/icons/restapi.png" alt="Icon" class="feature-benefit-icons">
                     <span class="explore-more">Explore more <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
                 </div>
             </div>
@@ -223,7 +221,7 @@
                 <h1 class="mt-3">Business Rule Engine</h1>
                 <p>Business Rule Engine: Polymorphic techniques to build reusable business logic.</p>
                 <div class="card-footer">
-                    <img src="./assets/imges/icons/discord.png" alt="Icon" class="feature-benefit-icons">
+                    <img src="./assets/imges/icons/settings.png" alt="Icon" class="feature-benefit-icons">
                     <span class="explore-more">Explore more <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
                 </div>
             </div>
@@ -235,7 +233,7 @@
                 <h1 class="mt-3">Service Bus Engine</h1>
                 <p>Supports broadcasts of system data with InMemory and Azure Service Bus.</p>
                 <div class="card-footer">
-                    <img src="./assets/imges/icons/discord.png" alt="Icon" class="feature-benefit-icons">
+                    <img src="./assets/imges/icons/busengine.png" alt="Icon" class="feature-benefit-icons">
                     <span class="explore-more">Explore more <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
                 </div>
             </div>
@@ -248,7 +246,7 @@
                 <h1 class="mt-3">Background Processing</h1>
                 <p>Supports asynchronous processes, tasks, and rules.</p>
                 <div class="card-footer">
-                    <img src="./assets/imges/icons/discord.png" alt="Icon" class="feature-benefit-icons">
+                    <img src="./assets/imges/icons/process2.png" alt="Icon" class="feature-benefit-icons">
                     <span class="explore-more">Explore more <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
                 </div>
             </div>
@@ -260,7 +258,7 @@
                 <h1 class="mt-3">Online Documentation</h1>
                 <p>Comprehensive documentation for all ServiceBricks features and guides on how to build your own.</p>
                 <div class="card-footer">
-                    <img src="./assets/imges/icons/discord.png" alt="Icon" class="feature-benefit-icons">
+                    <img src="./assets/imges/icons/documentation.png" alt="Icon" class="feature-benefit-icons">
                     <span class="explore-more">Explore more <img src="./assets/imges/icons/right.png" alt="Arrow Icon" class="arrow-icon"></span>
                 </div>
             </div>
@@ -322,98 +320,87 @@
 
 
 <!-- home-second-last-cards section start -->
-
 <div class="text-center mt-5">
-    <h4  style="font-size: 50px; color: #8a2be2;">Generative AI made for creators.</h4>
-    <p style="color: azure;">Servicebricks unlocks the potential of AI-powered applications</p>
+    <h4 class="second-last-second-title">Generative AI made for creators.</h4>
+    <p class="second-last-second-text">Servicebricks unlocks the potential of AI-powered applications</p>
 </div>
 
- <section class=" home-second-last-cards-section ">
-<div class="container ">
-    <div class="row align-items-center">
-        <div class="col-md-8"> <!-- 70% width for the image -->
-            <img src="./assets/imges/img/featureanimation.gif" alt="Description" class="home-second-last-cards-img img-fluid">
-        </div>
-        <div class="col-md-4  p-4 rounded"> <!-- 30% width for the text with border -->
-            <h2 class="second-last-second-title font-weight-bold">Smartest AI</h2>
-
-            <div class="d-flex align-items-center mb-3">
-                <p class="second-last-second-text mb-0">Servicebricks using AI to help you build microservices faster.</p>
+<section class="home-second-last-cards-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8 col-12 mb-4">
+                <img src="./assets/imges/img/featureanimation.gif" alt="Feature Animation" class="home-second-last-cards-img img-fluid">
             </div>
-            <hr class="custom-underline mb-3"> <!-- Underline -->
+            <div class="col-md-4 col-12 p-4 rounded">
+                <h2 class="second-last-second-title font-weight-bold">Smartest AI</h2>
+                <p class="second-last-second-text">Servicebricks uses AI to help you build microservices faster.</p>
+                <hr class="custom-underline mb-3">
 
-            <div class="d-flex align-items-center mb-3 ">
-                <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
-                <p class="second-last-second-text mb-0">Generate tailored microservices instantly.</p>
-            </div>
-            <hr class="custom-underline mb-3"> <!-- Underline -->
-
-            <div class="d-flex align-items-center mb-3">
-                <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
-                <p class="second-last-second-text mb-0">Build and deploy in seconds.</p>
-            </div>
-            <hr class="custom-underline mb-3"> <!-- Underline -->
-
-            <div class="d-flex align-items-center mb-3">
-                <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
-                <p class="second-last-second-text mb-0">Download source code for immediate use.</p>
-            </div>
-            <hr class="custom-underline mb-3"> <!-- Underline -->
-
-        </div>
-    </div>
-</div>
-
-<!-- Card Section -->
-<section class="container  mt-5">
-    <div class="row ">
-        <!-- First Card -->
-        <div class="col-md-6">
-            <div class="card card-2 position-relative overflow-hidden">
-                <div class="card-bg"></div> <!-- Background for the blur effect -->
-                <div class="card-content"> <!-- Wrapper for card content -->
-                    <h1 class="card-title">Architectural Excellence</h1>
-                    <div class="card-description">
-                        We provide the core architectural patterns, implementation, standardization, and governance for your microservices foundation.
-                    </div>
-                    <hr class="custom-underline-2 mb-3">
-                    <div class="card-description">
-                        <img src="./assets/imges/icons/check.svg" alt="Check Mark" class="check-image"> 
-                        Switch between storage providers with zero impact.
-                    </div>
-                    <hr class="custom-underline-2 mb-3">
-                    <div class="card-description">
-                        <img src="./assets/imges/icons/check.svg" alt="Check Mark" class="check-image"> 
-                        Use a consistent API for both relational and document DB.
-                    </div>
-                    <hr class="custom-underline-2 mb-3">
-                    <button class="gradient-button">Get started</button>
+                <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
+                    <p class="second-last-second-text mb-0">Generate tailored microservices instantly.</p>
                 </div>
-                
-            </div>
-        </div>
+                <hr class="custom-underline mb-3">
 
-        <!-- Second Card -->
-        <div class="col-md-6">
-            <div class="card card-2">
-                <h1 class="card-title">Pre-Built Microservices</h1>
-                <p class="card-description">Get started using our pre-built microservices and examples. Build new microservices and applications quickly using a robust foundation.</p>
-                <p class="card-description">Independent teams work in parallel, speeding up the overall process.</p>
-                
-                <!-- Icons Row -->
-                <div class="icons-row">
-                    <img src="./assets/imges/icons/undone.svg" alt="Icon 1" class="icon">
-                    <img src="./assets/imges/icons/undone.svg" alt="Icon 2" class="icon">
-                    <img src="./assets/imges/icons/undone.svg" alt="Icon 3" class="icon">
-                    <img src="./assets/imges/icons/undone.svg" alt="Icon 4" class="icon">
-                    <img src="./assets/imges/icons/undone.svg" alt="Icon 5" class="icon">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
+                    <p class="second-last-second-text mb-0">Build and deploy in seconds.</p>
                 </div>
-                <img src="./assets/imges/img/colab3.jpg" class="img-fluid third-card-img  rounded-4" alt="Image-Description">
+                <hr class="custom-underline mb-3">
+
+                <div class="d-flex align-items-center mb-3">
+                    <img src="./assets/imges/icons/check.svg" alt="Check" class="p-2" style="width: 35px; height: 35px;">
+                    <p class="second-last-second-text mb-0">Download source code for immediate use.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <section class="container mt-5">
+        <div class="row align-items-stretch">
+            <!-- First Card -->
+            <div class="col-md-6 col-12 mb-4 d-flex">
+                <div class="card card-2 position-relative overflow-hidden flex-grow-1">
+                    <div class="card-bg"></div>
+                    <div class="card-content p-4">
+                        <h1 class="card-title">Architectural Excellence</h1>
+                        <p class="card-description">We provide the core architectural patterns, implementation, standardization, and governance for your microservices foundation.</p>
+                        <hr class="custom-underline-2 mb-3">
+                        <div class="card-description">
+                            <img src="./assets/imges/icons/check.svg" alt="Check Mark" class="check-image">
+                            Switch between storage providers with zero impact.
+                        </div>
+                        <hr class="custom-underline-2 mb-3">
+                        <div class="card-description">
+                            <img src="./assets/imges/icons/check.svg" alt="Check Mark" class="check-image">
+                            Use a consistent API for both relational and document DB.
+                        </div>
+                        <hr class="custom-underline-2 mb-3">
+                        <button class="gradient-button">Get started</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-md-6 col-12 mb-4 d-flex">
+                <div class="card card-2 p-4 flex-grow-1">
+                    <h1 class="card-title">Pre-Built Microservices</h1>
+                    <p class="card-description">Get started using our pre-built microservices and examples. Build new microservices and applications quickly using a robust foundation.</p>
+                    <p class="card-description">Independent teams work in parallel, speeding up the overall process.</p>
+                    <div class="icons-row mb-3">
+                        <img src="./assets/imges/icons/undone.svg" alt="Icon 1" class="icon">
+                        <img src="./assets/imges/icons/undone.svg" alt="Icon 2" class="icon">
+                        <img src="./assets/imges/icons/undone.svg" alt="Icon 3" class="icon">
+                        <img src="./assets/imges/icons/undone.svg" alt="Icon 4" class="icon">
+                        <img src="./assets/imges/icons/undone.svg" alt="Icon 5" class="icon">
+                    </div>
+                    <img src="./assets/imges/img/colab3.jpg" class="img-fluid third-card-img rounded-4" alt="Collaboration Image">
+                </div>
+            </div>
+        </div>
+    </section>
 </section>
-</section>
+
 
 
 <!-- home-second-last-cards section end -->
@@ -518,17 +505,13 @@
 
 
 
-
-
-
 <section class="container mt-5">
     <div class="row mb-5">
         <!-- First Card -->
-        <div class="col-md-6">
-            <div class="card-2 home-last-section-cards-card-1 position-relative overflow-hidden">
-                <div class="home-last-section-cards-card-bg"></div> <!-- Background for the blur effect -->
-                <div class="home-last-section-cards-card-content"> <!-- Wrapper for card content -->
-                    <img src="./assets/imges/img/hero.png" alt="Check Mark" class="home-last-section-cards-icon"> 
+        <div class="col-md-6 col-12 mb-4 d-flex">
+            <div class="card-2 home-last-section-cards-card-1 position-relative overflow-hidden h-100 w-100">
+                <div class="home-last-section-cards-card-content">
+                    <img src="./assets/imges/img/hero.png" alt="Hero Image" class="home-last-section-cards-icon img-fluid">
                     <h1 class="home-last-section-cards-card-title">Cache Microservice</h1>
                     <p class="home-last-section-cards-card-description">
                         Generic key/value pair data storage with an expiration process to delete expired data.
@@ -539,11 +522,11 @@
         </div>
 
         <!-- Second Card -->
-        <div class="col-md-6">
-            <div class="card-2 home-last-section-cards-card-2">
-                <img src="./assets/imges/img/image-3.png" alt="Icon 1" class="home-last-section-cards-icon">
-                <h1 class="home-last-section-cards-card-title">Logging Microservice</h1>
-                <p class="home-last-section-cards-card-description">
+        <div class="col-md-6 col-12 mb-4 d-flex">
+            <div class="card-2 home-last-section-cards-card-2 position-relative overflow-hidden h-100 w-100">
+                <img src="./assets/imges/img/image-3.png" alt="Icon" class="home-last-section-cards-icon img-fluid">
+                <h1 class="home-last-section-cards-card-title ">Logging Microservice</h1>
+                <p class="home-last-section-cards-card-description text-white">
                     Service-scoped or centralized application logging with web request and response auditing.
                 </p>
                 <button class="gradient-button">Get started</button>
@@ -552,8 +535,6 @@
     </div>
 </section>
 
-
-<!-- home pricing section end -->
 
 
 
