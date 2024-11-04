@@ -2737,12 +2737,12 @@ a {
 /* Documentation end  */
 
 .consulting-background-image {
-    background-image: url('../imges/img/codeface.p');
+    background-image: url('../imges/img/codeface.ng');
     /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100%;
-    /* filter: blur(8px); This blurs the image */
+    /* filter: blur(1px);  */
     /* position: absolute; */
     width: 100%;
     z-index: 1;
