@@ -2132,7 +2132,7 @@ h1 {
 }
 
 .user-dashboard-card:hover {
-    background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
+    /* background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925)); */
     background-size: cover;
     background-blend-mode: multiply;
     /* Darkens the background image */
