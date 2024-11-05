@@ -52,7 +52,12 @@ body {
 .getstarted-link.active,
 .consulting-link.active,
 .about-link.active,
-.reg-link.active {
+.reg-link.active,
+.blog-link.active,
+.faq-link.active,
+.privacy-link.active,
+.news-link.active,
+.term-link.active  {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
 }
@@ -113,24 +118,6 @@ footer {
     color: #8a2be2 !important;
 }
 
-.gradient-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #682459, #3e0b4d, #6b01c2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gradient-text:hover {
-    background: linear-gradient(to right, #00ffaa, #007740, #00b368);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
 
     .img-div {
@@ -166,6 +153,15 @@ footer {
 
 }
 
+/* Footer Section CSS End */
+
+
+.glaxit {
+    color: #fff;
+}
+.glaxit:hover {
+ color:#8a2be2 ;
+}
 /* Footer Section CSS End */
 
 
@@ -993,23 +989,26 @@ h1 {
 
 .text-container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 0;
     transform: translateY(-50%);
-    text-align: left;
-    padding: 0 15px;
-    /* Responsive padding */
-    max-width: 50%;
-    /* Adjust max-width */
-}
+    text-align: left;}
 
 .hero-span {
-    font-size: 30px;
+    padding: 0 15px; /* Responsive padding */
+    max-width: 50%; /* Adjust max-width */
+    padding-left: 40px;
+  
+  }
+  
+  .hero-span {
+    font-size: 50px;
     font-weight: bold;
     background: linear-gradient(90deg, #8a2be2, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 
 @media (max-width: 768px) {
     .text-container {
@@ -1026,15 +1025,15 @@ h1 {
 }
 
 @media (max-width: 576px) {
-
-    .text-container h1 {
+    .text-container h1{
+        margin-top: 20px;
         font-size: 1.5rem;
+        text-align: left;
     }
 
     .hero-span {
-
-        text-align: left;
-        /* Further reduce font size for extra small devices */
+      font-size: 20px;
+      text-align: left; /* Further reduce font size for extra small devices */
     }
 
     p {
@@ -1056,21 +1055,17 @@ h1 {
 
 
 
-
-
 .content-wrapper {
     display: flex;
 }
 
 .divider {
     position: relative;
-    width: 2px;
-    /* Vertical divider width */
-    height: 100%;
-    min-height: 200px;
-    /* Ensure it has a minimum height */
-    margin: 0 auto;
-    /* Center divider */
+    width: 2px; /* Vertical divider for large screens */
+    height: 100%; 
+    min-height: 200px; /* Minimum height for the vertical divider */
+    margin: 0 auto; /* Center divider */
+    background-color: transparent; /* Make divider background transparent initially */
 }
 
 .divider::before {
@@ -1080,17 +1075,15 @@ h1 {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 4px;
-    /* Thickness at the top */
+    width: 4px; /* Thickness at the top */
     height: 100%;
     background: #ccc;
-    clip-path: polygon(50% 0%, 100% 100%, 0 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0 100%); /* Triangle effect */
 }
 
 .gradient-text {
     font-size: 20px;
-    background: linear-gradient(90deg, #c777c086, #8a2be2, #6c757d);
-    /* Initial gradient */
+    background: linear-gradient(90deg, #c777c086);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -1098,37 +1091,31 @@ h1 {
 
 .scrolled-text {
     font-size: 20px;
-    background: linear-gradient(90deg, #ff6347, #ffa500);
-    /* New gradient colors */
+    background: linear-gradient(90deg, #0c0301);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    /* For fallback */
 }
 
 @media (max-width: 768px) {
     .divider {
-        width: 100%;
-        /* Full width for horizontal divider */
-        height: 2px;
-        /* Height for horizontal divider */
-        min-height: auto;
-        /* Remove minimum height for horizontal */
+        width: 100%; /* Full width for horizontal divider */
+        height: 2px; /* Height for horizontal divider */
+        min-height: auto; /* Remove minimum height for horizontal */
+        background-color: #ccc; /* Background color for the horizontal divider */
     }
 
     .divider::before {
-        width: 100%;
-        /* Full width for horizontal divider */
-        height: 4px;
-        /* Thickness for horizontal divider */
-        top: 50%;
-        /* Center vertically */
-        left: 0;
-        /* Align to left */
-        transform: none;
-        /* No need for transform */
+        content: ''; /* Remove the clip-path triangle effect */
+        width: 100%; /* Full width for horizontal divider */
+        height: 4px; /* Thickness for horizontal divider */
+        top: 50%; /* Center vertically */
+        left: 0; /* Align to left */
+        transform: none; /* No need for transform */
+        clip-path: none; /* Remove clip-path effect */
     }
 }
+
 
 
 
@@ -1238,12 +1225,13 @@ h1 {
 .company-logo-section {
     border: 1px solid #ffffff3d;
     margin: 20px;
-    padding: 40px;
+   
 
 }
 
 .company-img-title {
     color: white;
+    padding-top: 20px;
 }
 
 .company-logo-text {
@@ -1329,7 +1317,7 @@ h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 20px;
+    padding: 10px;
     position: relative;
 }
 
@@ -1340,10 +1328,11 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../imges/img/AI0.png');
+    background-image: url('../imges/img/image-2.png');
     background-size: cover;
     filter: blur(35px);
     z-index: 1;
+    
 }
 
 /* Content Wrapper for Card */
@@ -1351,7 +1340,7 @@ h1 {
     position: relative;
     z-index: 2;
     color: rgb(95, 1, 1);
-    padding: 50px;
+   
 }
 
 /* Card Title */
@@ -1405,7 +1394,7 @@ h1 {
 
     .card-2 {
         min-height: 500px;
-        padding: 15px;
+   
     }
 
     .card-title {
@@ -1413,7 +1402,7 @@ h1 {
     }
 
     .card-content {
-        padding: 20px;
+        
     }
 
     .icons-row {
@@ -1426,6 +1415,7 @@ h1 {
         width: 40px;
         height: 40px;
         margin: 5px;
+       
     }
 }
 
@@ -1436,7 +1426,7 @@ h1 {
     }
 
     .home-second-last-cards-section {
-        padding: 30px 15px;
+        padding: 30px 1px;
     }
 
     .home-second-last-cards-img {
@@ -1493,7 +1483,7 @@ h1 {
 
 /* Logo Styling */
 .home-pricing-section__logo {
-    width: 300px;
+    width: 250px;
     /* Adjust logo size */
     margin-bottom: 20px;
 }
@@ -1566,7 +1556,7 @@ h1 {
 }
 
 .pricing-subscription__description {
-    font-size: 22px;
+    font-size: 18px;
     color: #ffff;
     text-align: justify;
 }
@@ -1642,7 +1632,7 @@ h1 {
 }
 
 .pricing-card__feature {
-    font-size: 16px;
+    font-size: 13px;
     color: #ffffff;
     margin-top: 12px;
 }
@@ -1735,9 +1725,10 @@ h1 {
 
 /* last card section start */
 
-.home-last-section-cards-icon {
-    width: 500px;
-    height: 350px;
+
+.home-last-section-cards-icon{
+    
+    height: 250px;
 }
 
 .home-last-section-cards-card-title {
@@ -1752,11 +1743,93 @@ h1 {
 
 
 
+
+
+
 /* last card section end */
 
 
 /* ------------------------------home section completed---------------------------------- */
 
+
+/* feature section start*/
+.feature-middle{
+border: 1px solid gray;
+ padding-top: 10%;
+ padding-bottom: 10%;
+  display: flex;
+   flex-direction:column;
+    align-items: center;
+     justify-content: center;
+       text-align: center;
+       padding: 20px;
+}
+
+
+
+
+/* end */
+
+/* feature-pakges-section start */
+
+.card-architecture-section-title {
+    color: #8a2be2;
+  }
+
+  /* Card Section */
+  .card-architecture-section {
+    margin-top: 3rem;
+  }
+
+  /* Card Styling */
+  .architecture-card {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .architecture-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card Image Styling */
+  .architecture-card-img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  /* Transparent Modal Background */
+  .architecture-modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Centered Modal Image */
+  .architecture-modal-img {
+    max-height: 80vh;
+    object-fit: contain;
+  }
+
+  /* Responsive Card Height */
+  .architecture-card-body {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* Button Styling */
+  .architecture-btn-view {
+    background-color: #8a2be2;
+    border: none;
+  }
+
+  .architecture-btn-view:hover {
+    background-color: #6c0fb5;
+  }
 /* registration page styling start */
 
 
@@ -2657,7 +2730,7 @@ option {
 
 .about-owned {
     font-weight: lighter;
-    /* font-size: 16px; */
+    
     color: rgba(196, 193, 193, 0.74);
 }
 
@@ -3101,5 +3174,15 @@ a {
     background-size: contain;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+} 
+
+.social-media-icons a:hover svg path {
+    fill: #8a2be2;
+    /* Purple color */
+}
+@media screen and (max-width:768px) {
+    .social-media-icons ul {
+        gap: 1rem;
+    }
 }
