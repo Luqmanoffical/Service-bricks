@@ -1021,14 +1021,15 @@ h1 {
   @media (max-width: 576px) {
 
     .text-container h1{
-        margin-top: 20px;
-        font-size: 1.5rem;
+       
+        font-size: 1.7rem;
+        font-weight: 100;
         text-align: left;
         max-width: 100%;
         
     }
     .hero-span {
-      font-size: 20px;
+      font-size: 30px;
       text-align: left; /* Further reduce font size for extra small devices */
     }
     
