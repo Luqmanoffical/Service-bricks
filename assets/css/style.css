@@ -982,19 +982,17 @@ h1 {
 
 
 
-.vh-100 {
-    height: 100vh;
-    /* Full height for the hero section */
-}
 
-.text-container {
+.vh-100 {
+    height: 100vh; /* Full height for the hero section */
+  }
+  
+  .text-container {
     position: absolute;
     top: 60%;
     left: 0;
     transform: translateY(-50%);
-    text-align: left;}
-
-.hero-span {
+    text-align: left;
     padding: 0 15px; /* Responsive padding */
     max-width: 50%; /* Adjust max-width */
     padding-left: 40px;
@@ -1007,41 +1005,40 @@ h1 {
     background: linear-gradient(90deg, #8a2be2, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .text-container {
-        max-width: 90%;
-        /* Reduce max-width for smaller screens */
-        text-align: center;
-        /* Center text on smaller devices */
+      max-width: 85%; /* Reduce max-width for smaller screens */
+      text-align: left; /* Center text on smaller devices */
     }
-
+  
     .gradient-text {
-        font-size: 2rem;
-        /* Adjust font size for smaller screens */
+      font-size: 2rem; /* Adjust font size for smaller screens */
     }
-}
+  }
+  
+  @media (max-width: 576px) {
 
-@media (max-width: 576px) {
     .text-container h1{
         margin-top: 20px;
         font-size: 1.5rem;
         text-align: left;
+        max-width: 95%;
+        
     }
-
     .hero-span {
       font-size: 20px;
       text-align: left; /* Further reduce font size for extra small devices */
     }
-
+    
     p {
-        font-size: 1rem;
-        text-align: justify;
-        /* Adjust paragraph font size */
+      font-size: 1rem;
+      text-align: justify; /* Adjust paragraph font size */
     }
-}
+  }
+  
+
 
 
 
@@ -1054,7 +1051,7 @@ h1 {
 
 
 
-
+/* Base Styles */
 .content-wrapper {
     display: flex;
 }
@@ -1097,7 +1094,29 @@ h1 {
     color: transparent;
 }
 
+/* Medium screens (Tablets) */
+@media (max-width: 1024px) {
+    .divider {
+        width: 1px; /* Thinner vertical divider */
+        min-height: 150px; /* Adjusted minimum height */
+        background-color: #ccc; /* Visible background color */
+    }
+
+    .divider::before {
+        width: 2px; /* Thinner for medium screens */
+    }
+
+    .gradient-text, .scrolled-text {
+        font-size: 18px; /* Slightly smaller font */
+    }
+}
+
+/* Small screens (Mobile) */
 @media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack content vertically */
+    }
+
     .divider {
         width: 100%; /* Full width for horizontal divider */
         height: 2px; /* Height for horizontal divider */
@@ -1113,6 +1132,22 @@ h1 {
         left: 0; /* Align to left */
         transform: none; /* No need for transform */
         clip-path: none; /* Remove clip-path effect */
+    }
+
+    .gradient-text, .scrolled-text {
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+}
+
+/* Extra small screens (Very small mobile devices) */
+@media (max-width: 480px) {
+    .divider {
+        height: 1px; /* Very thin for extra small screens */
+        background-color: #bbb; /* Slightly lighter color */
+    }
+
+    .gradient-text, .scrolled-text {
+        font-size: 14px; /* Smaller font size */
     }
 }
 
@@ -1308,6 +1343,42 @@ h1 {
 }
 
 /* Card Styles */
+/* Container for Cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+/* Main Card Section */
+.home-second-last-cards-section {
+    border: 1px solid #ffffff3d;
+    margin: 20px;
+    background-color: #15131d;
+    padding: 60px;
+}
+
+/* Card Image */
+.home-second-last-cards-img {
+    height: 400px;
+    width: 500px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+/* Text Styles */
+.custom-underline,
+.custom-underline-2,
+.second-last-second-text {
+    color: white;
+}
+
+.second-last-second-title {
+    color: #8a2be2;
+    font-size: 50px;
+}
+
+/* Card Styles */
 .card-2 {
     border: 1px solid rgba(255, 255, 255, 0.24);
     background: #15131d;
@@ -1319,6 +1390,7 @@ h1 {
     align-items: flex-start;
     padding: 10px;
     position: relative;
+    width: calc(50% - 20px); /* Show two cards per row by default */
 }
 
 /* Card Background */
@@ -1332,7 +1404,6 @@ h1 {
     background-size: cover;
     filter: blur(35px);
     z-index: 1;
-    
 }
 
 /* Content Wrapper for Card */
@@ -1340,7 +1411,6 @@ h1 {
     position: relative;
     z-index: 2;
     color: rgb(95, 1, 1);
-   
 }
 
 /* Card Title */
@@ -1358,6 +1428,7 @@ h1 {
     text-align: justify;
 }
 
+/* Icons */
 .check-image {
     width: 16px;
     height: 16px;
@@ -1380,8 +1451,20 @@ h1 {
     margin-left: 10px;
 }
 
-/* Responsive Styles */
+/* Responsive Styles for Medium Screens (768px and below) */
 @media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-2 {
+        width: 100%; /* Full width for each card */
+        min-height: 550px; /* Adjusted height */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
     .home-second-last-cards-img {
         height: 300px;
         width: 100%;
@@ -1390,35 +1473,38 @@ h1 {
 
     .second-last-second-title {
         font-size: 30px;
-    }
-
-    .card-2 {
-        min-height: 500px;
-   
+        text-align: center;
     }
 
     .card-title {
         font-size: 28px;
+        text-align: center;
     }
 
     .card-content {
-        
+        padding: 15px;
+        text-align: center;
+    }
+
+    .card-description {
+        font-size: 16px;
     }
 
     .icons-row {
         flex-wrap: wrap;
         justify-content: center;
         padding-left: 0;
+        margin-top: 15px;
     }
 
     .icon {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         margin: 5px;
-       
     }
 }
 
+/* Responsive Styles for Small Screens (576px and below) */
 @media (max-width: 576px) {
     .second-last-second-title {
         font-size: 24px;
@@ -1426,7 +1512,7 @@ h1 {
     }
 
     .home-second-last-cards-section {
-        padding: 30px 1px;
+        padding: 30px 10px;
     }
 
     .home-second-last-cards-img {
