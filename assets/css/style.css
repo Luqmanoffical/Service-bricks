@@ -52,7 +52,12 @@ body {
 .getstarted-link.active,
 .consulting-link.active,
 .about-link.active,
-.reg-link.active {
+.reg-link.active,
+.blog-link.active,
+.faq-link.active,
+.privacy-link.active,
+.news-link.active,
+.term-link.active  {
     color: #8a2be2 !important;
     border-bottom: 1px solid #8a2be2;
 }
@@ -113,24 +118,6 @@ footer {
     color: #8a2be2 !important;
 }
 
-.gradient-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #24256879, #3e0b4d, #6b01c2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gradient-text:hover {
-    background: linear-gradient(to right, #00ffaa, #007740, #00b368);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
 
     .img-div {
@@ -166,6 +153,22 @@ footer {
 
 }
 
+/* Footer Section CSS End */
+
+
+.gradient-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #24256879, #3e0b4d, #6b01c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text:hover {
+    background: linear-gradient(to right, #00ffaa, #007740, #00b368);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Footer Section CSS End */
 
 
