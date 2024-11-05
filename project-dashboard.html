@@ -69,8 +69,8 @@
         <h1 class="text-2xl font-bold mb-4 lite-purple">Project Dashboard</h1>
 
         <div class="mb-4">
-            <button onClick="createMicroservice()" class="btn  gradient-button project-button">Create New Microservice</button>
-            <button onClick="addExistingMicroservice()" class="btn  gradient-button">Add Existing Microservice</button>
+    <a href="./createMicroservice.html"> <button onClick="createMicroservice()" class="btn  gradient-button project-button">Create New Microservice</button> </a>
+          <a href="./editMicroservices.html">  <button onClick="addExistingMicroservice()" class="btn  gradient-button">Add Existing Microservice</button> </a>
         </div>
 
         <div class="my-6">
@@ -230,7 +230,7 @@
                 card.innerHTML = `
                     <h3 class="text-lg font-bold">${microservice.name}</h3>
                     <p>${microservice.description}</p>
-                    <button onclick="editMicroservice(${microservice.id})" class="btn btn-primary">Edit</button>
+                    <button onclick="editMicroservice(${microservice.id})" class="btn login-btn">Edit</button>
                 `;
                 microserviceGrid.appendChild(card);
             });

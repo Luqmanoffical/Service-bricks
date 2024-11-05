@@ -2317,7 +2317,7 @@ border: 1px solid gray;
 }
 
 .user-dashboard-card:hover {
-    background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925));
+    /* background-image: url('../imges/img/cardbg.webp'), linear-gradient(to right, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.925)); */
     background-size: cover;
     background-blend-mode: multiply;
     /* Darkens the background image */
@@ -2707,7 +2707,7 @@ option {
 
 .about-owned {
     font-weight: lighter;
-    /* font-size: 16px; */
+    
     color: rgba(196, 193, 193, 0.74);
 }
 
@@ -3149,5 +3149,5 @@ a {
     background-size: contain;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 } 
