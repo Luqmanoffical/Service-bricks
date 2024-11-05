@@ -2618,7 +2618,7 @@ option {
 
 .about-owned {
     font-weight: lighter;
-    /* font-size: 16px; */
+    
     color: rgba(196, 193, 193, 0.74);
 }
 
@@ -3060,5 +3060,5 @@ a {
     background-size: contain;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 } 
