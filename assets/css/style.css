@@ -156,18 +156,11 @@ footer {
 /* Footer Section CSS End */
 
 
-.gradient-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #24256879, #3e0b4d, #6b01c2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.glaxit {
+    color: #fff;
 }
-
-.gradient-text:hover {
-    background: linear-gradient(to right, #00ffaa, #007740, #00b368);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.glaxit:hover {
+ color:#8a2be2 ;
 }
 /* Footer Section CSS End */
 
@@ -3154,3 +3147,13 @@ a {
     text-align: center;
     padding: 10px;
 } 
+
+.social-media-icons a:hover svg path {
+    fill: #8a2be2;
+    /* Purple color */
+}
+@media screen and (max-width:768px) {
+    .social-media-icons ul {
+        gap: 1rem;
+    }
+}
