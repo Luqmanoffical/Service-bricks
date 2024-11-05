@@ -1009,7 +1009,7 @@ h1 {
   
   @media (max-width: 768px) {
     .text-container {
-      max-width: 85%; /* Reduce max-width for smaller screens */
+      max-width: 100%; /* Reduce max-width for smaller screens */
       text-align: left; /* Center text on smaller devices */
     }
   
@@ -1024,7 +1024,7 @@ h1 {
         margin-top: 20px;
         font-size: 1.5rem;
         text-align: left;
-        max-width: 95%;
+        max-width: 100%;
         
     }
     .hero-span {
@@ -1033,8 +1033,8 @@ h1 {
     }
     
     p {
-      font-size: 1rem;
-      text-align: justify; /* Adjust paragraph font size */
+      font-size: 15px;
+       /* Adjust paragraph font size */
     }
   }
   
@@ -1512,7 +1512,7 @@ h1 {
     }
 
     .home-second-last-cards-section {
-        padding: 30px 10px;
+        padding: 30px 1px;
     }
 
     .home-second-last-cards-img {
@@ -1522,12 +1522,12 @@ h1 {
 
     .card-title {
         font-size: 24px;
-        text-align: center;
+        
     }
 
     .card-content {
         padding: 15px;
-        text-align: center;
+        
     }
 
     .card-description {
@@ -1563,7 +1563,7 @@ h1 {
     background: url('../imges/img/stars.svg') center/cover no-repeat;
     /* Cover image */
     color: white;
-    text-align: center;
+    
     padding: 20px;
 }
 
